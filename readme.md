@@ -10,13 +10,17 @@ Consists of
 Installation
 
 Clone the git repo
-    git clone https://github.com/kiriaze/wp-get-up-and-go
+    git clone https://github.com/kiriaze/PressPlay
 
 run composer
 
 create db
 
 sudo chown -R _www DIR; sudo chmod -R g+w DIR;
+
+update wp-config creds
+
+restart apache
 
 make dope shit.
 
