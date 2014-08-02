@@ -9,7 +9,7 @@ set :copy_exclude, [".git", ".DS_Store", ".gitignore", ".gitmodules"]
 
 role :app, %w{user@ssh-destination}
 
-set :linked_dirs, %w{app/uploads}
+set :linked_dirs, %w{wp-content/uploads}
 
 set :composer_install_flags, '--no-dev --prefer-dist --no-scripts --quiet --optimize-autoloader'
 set :composer_roles, :all
