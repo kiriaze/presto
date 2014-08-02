@@ -15,17 +15,27 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'pressplay_db');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
+    define('WP_ENV', 'dev');
+} else {
+    define('WP_ENV', 'prod');
+}
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+if ( WP_ENV == 'dev' ) {
+    define('DB_NAME', 'stoke_db');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_HOST', 'localhost');
+    define('DEBUG', true);
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+} else {
+    define('DB_NAME', 'prod_db');
+    define('DB_USER', 'username');
+    define('DB_PASSWORD', 'password');
+    define('DB_HOST', 'localhost');
+    define('DEBUG', false);
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -52,17 +62,18 @@ define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
 
 
-// =====================================
-// Set Simple Framework as Default theme
-// =====================================
-define('WP_DEFAULT_THEME', 'simple');
-
-
 // ========================
 // Custom Content Directory
 // ========================
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
+
+
+// =============================================
+// Set first theme (framework) as Default theme
+// =============================================
+$default_theme = ucfirst(scandir(WP_CONTENT_DIR . '/themes', 1)[0]);
+define('WP_DEFAULT_THEME', $default_theme);
 
 // ================================================
 // You almost certainly do not want to change these
@@ -83,19 +94,18 @@ $table_prefix  = 'wp_';
 // ================================
 define( 'WPLANG', '' );
 
-// ===========
+// ============
 // Hide errors
-// ===========
+// ============
 ini_set( 'display_errors', 0 );
-define( 'WP_DEBUG_DISPLAY', false );
+define( 'WP_DEBUG_DISPLAY', true );
 
 
 // =================================================================
 // Debug mode
-// Debugging? Enable these. Can also enable them in local-config.php
 // =================================================================
-// define( 'SAVEQUERIES', true );
-// define( 'WP_DEBUG', true );
+define( 'SAVEQUERIES', DEBUG );
+define( 'WP_DEBUG', DEBUG );
 
 // ======================================
 // Load a Memcached config if we have one
