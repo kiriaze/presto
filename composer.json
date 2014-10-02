@@ -1,7 +1,7 @@
 {
-    "name"        : "kiriaze/vvv-simple",
+    "name"        : "kiriaze/PressPlay",
 
-    "description" : "VVV Auto Site: WordPress stack via Composer",
+    "description" : "Composer backed boilerplate project for easy WordPress sites",
 
     "authors"     : [
         {
@@ -19,7 +19,6 @@
         "wordpress"                                    : "3.8",
         "wpackagist-plugin/advanced-custom-fields"     : "*",
         "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
-        "wpackagist-plugin/w3-total-cache"             : "*",
         "wpackagist-plugin/wp-super-cache"             : "*",
         "wpackagist-plugin/varnish-http-purge"         : "*",
         "wpackagist-plugin/duplicate-post"             : "*",
@@ -27,7 +26,13 @@
         "wpackagist-plugin/limit-login-attempts"       : "*",
         "wpackagist-plugin/wordpress-importer"         : "*",
         "wpackagist-plugin/intuitive-custom-post-order": "*",
+        "wpackagist-plugin/gathercontent-import"       : "*",
+        "wpackagist-plugin/backwpup"                   : "*",
+        "wpackagist-plugin/autoptimize"                : "*",
+        "wpackagist-plugin/disqus-comment-system"      : "*",
         "simple-framework"                             : "*",
+        "simple"                                       : "*",
+        "simple-child"                                 : "*",
         "simple-shortcodes"                            : "*",
         "github-updater"                               : "*"
     },
@@ -37,12 +42,9 @@
         "wpackagist-plugin/core-control"               : "*",
         "wpackagist-plugin/monster-widget"             : "*",
         "wpackagist-plugin/regenerate-thumbnails"      : "*",
-        "wpackagist-plugin/theme-check"                : "*",
         "wpackagist-plugin/toolbar-theme-switcher"     : "*",
         "wpackagist-plugin/user-switching"             : "*",
         "wpackagist-plugin/wcm-user-language-switcher" : "*",
-        "wpackagist-plugin/theme-test-drive"           : "*",
-        "wpackagist-plugin/simply-show-ids"            : "*",
         "wpackagist-plugin/rtl-tester"                 : "*",
         "wpackagist-plugin/rewrite-rules-inspector"    : "*",
         "wpackagist-plugin/query-monitor"              : "*",
@@ -92,6 +94,32 @@
                 "type": "wordpress-theme",
                 "source": {
                     "url": "git://github.com/kiriaze/simple-framework.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple",
+                "version": "dev-master",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-child",
+                "version": "dev-master",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-child.git",
                     "type": "git",
                     "reference": "origin/master"
                 }

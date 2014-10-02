@@ -16,11 +16,3 @@ Thumbs.db
 ############################
 wp
 wp-content
-
-
-############################
-# Ignore cap files #
-############################
-deploy/
-Capfile
-config-*.php

@@ -13,13 +13,11 @@ $ cd PressPlay
 $ composer install
 ````
 
-## Upgrading WordPress
+update wp-config.php
+comment out wp files in git ignore
+rm -rf .git
+add youre new remote and push on!
 
-1. Open `composer.json` and change version number to reflect the upgrade.
-2. Run `composer update` to update locally. This should update your lock file.
-3. Push the updated json and lock file to your repo.
-4. Run `cap production deploy` to deploy your changes and upgrade remotely.
-5. Go to your site, login and perform any pending database updates.
 
 ## Credits
 
@@ -77,14 +75,7 @@ make dope shit.
 
 Search and replace for simple within the theme and replace it with your new theme name.
 
-cd into theme, run bundle, then run guard -i.
-
 
 attempting one liner
 
 curl -O http://wordpress.org/latest.tar.gz ; tar -xvzf latest.tar.gz ; mv wordpress/* . ; rmdir wordpress/ ; rm latest.tar.gz ; rmdir wordpress/ ; rm latest.tar.gz ; cp wp-config-sample.php wp-config.php ; mysql -u [username] -p[password] -e "create database [databasename];" ; nano wp-config.php; sudo apachectl graceful;
-
-
-
-
-The best way is to run composer install on the server after updating to the latest code. You should also make sure you commit your composer.lock file, which the server will then use to install (you should not run composer update on the server).

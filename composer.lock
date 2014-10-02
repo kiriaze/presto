@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0606a93880cd027878931be0a5859c8a",
+    "hash": "ba962748649e970bbffbdaf61da334d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "41cf781ed1271e25bf31b715416a349996aa2527"
+                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/41cf781ed1271e25bf31b715416a349996aa2527",
-                "reference": "41cf781ed1271e25bf31b715416a349996aa2527",
+                "url": "https://api.github.com/repos/composer/installers/zipball/5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
+                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
                 "shasum": ""
             },
             "replace": {
@@ -59,6 +59,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "Thelia",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
@@ -71,6 +72,7 @@
                 "drupal",
                 "elgg",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -94,7 +96,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-07-22 17:04:15"
+            "time": "2014-09-25 03:36:45"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -147,7 +149,29 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-06-18 02:02:00"
+            "time": "2014-08-21 16:40:15"
+        },
+        {
+            "name": "simple",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/kiriaze/simple.git",
+                "reference": "origin/master"
+            },
+            "type": "wordpress-theme",
+            "time": "2014-09-03 18:58:17"
+        },
+        {
+            "name": "simple-child",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/kiriaze/simple-child.git",
+                "reference": "origin/master"
+            },
+            "type": "wordpress-theme",
+            "time": "2014-09-02 23:18:58"
         },
         {
             "name": "simple-framework",
@@ -158,7 +182,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-08-01 19:57:47"
+            "time": "2014-08-27 21:33:34"
         },
         {
             "name": "simple-shortcodes",
@@ -169,7 +193,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-05-04 03:18:56"
+            "time": "2014-08-29 17:55:05"
         },
         {
             "name": "wordpress",
@@ -207,7 +231,79 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/",
-            "time": "2014-05-05 05:16:34"
+            "time": "2014-09-12 01:22:41"
+        },
+        {
+            "name": "wpackagist-plugin/autoptimize",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/autoptimize/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/autoptimize.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/autoptimize": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/autoptimize/",
+            "time": "2014-09-10 11:33:10"
+        },
+        {
+            "name": "wpackagist-plugin/backwpup",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/backwpup/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/backwpup.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/backwpup": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/backwpup/",
+            "time": "2014-09-04 09:22:24"
+        },
+        {
+            "name": "wpackagist-plugin/disqus-comment-system",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/disqus-comment-system/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/disqus-comment-system.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/disqus-comment-system": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/disqus-comment-system/",
+            "time": "2014-06-24 00:43:16"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -256,6 +352,30 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/fg-fix-serialized-strings/",
             "time": "2014-02-09 07:05:02"
+        },
+        {
+            "name": "wpackagist-plugin/gathercontent-import",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/gathercontent-import/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/gathercontent-import.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/gathercontent-import": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/gathercontent-import/",
+            "time": "2014-09-30 15:52:54"
         },
         {
             "name": "wpackagist-plugin/intuitive-custom-post-order",
@@ -327,7 +447,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/post-thumbnail-editor/",
-            "time": "2014-04-26 06:55:25"
+            "time": "2014-09-06 07:26:23"
         },
         {
             "name": "wpackagist-plugin/varnish-http-purge",
@@ -351,31 +471,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/varnish-http-purge/",
-            "time": "2014-07-08 23:25:51"
-        },
-        {
-            "name": "wpackagist-plugin/w3-total-cache",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/w3-total-cache.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/w3-total-cache": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/w3-total-cache/",
-            "time": "2014-04-04 01:42:00"
+            "time": "2014-09-04 19:06:25"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -423,7 +519,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-super-cache/",
-            "time": "2014-07-31 22:09:33"
+            "time": "2014-09-04 15:16:08"
         }
     ],
     "packages-dev": [
@@ -473,7 +569,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/debug-bar/",
-            "time": "2013-05-15 13:06:43"
+            "time": "2014-09-02 05:19:55"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
@@ -593,7 +689,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/log-deprecated-notices/",
-            "time": "2013-03-08 21:03:50"
+            "time": "2014-09-02 05:22:09"
         },
         {
             "name": "wpackagist-plugin/log-viewer",
@@ -641,7 +737,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/monster-widget/",
-            "time": "2013-01-05 18:49:53"
+            "time": "2014-09-04 17:47:05"
         },
         {
             "name": "wpackagist-plugin/p3-profiler",
@@ -665,7 +761,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/p3-profiler/",
-            "time": "2014-07-19 20:08:13"
+            "time": "2014-09-27 19:03:06"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
@@ -689,7 +785,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/query-monitor/",
-            "time": "2014-07-03 14:41:57"
+            "time": "2014-09-04 16:32:15"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
@@ -761,78 +857,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/rtl-tester/",
-            "time": "2014-04-29 08:27:16"
-        },
-        {
-            "name": "wpackagist-plugin/simply-show-ids",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simply-show-ids/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/simply-show-ids.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/simply-show-ids": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/simply-show-ids/",
-            "time": "2010-06-26 02:40:54"
-        },
-        {
-            "name": "wpackagist-plugin/theme-check",
-            "version": "20131213.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/theme-check/",
-                "reference": "tags/20131213.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/theme-check.20131213.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/theme-check": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/theme-check/"
-        },
-        {
-            "name": "wpackagist-plugin/theme-test-drive",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/theme-test-drive/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/theme-test-drive.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/theme-test-drive": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/theme-test-drive/",
-            "time": "2013-03-14 07:26:19"
+            "time": "2014-09-04 21:13:19"
         },
         {
             "name": "wpackagist-plugin/toolbar-theme-switcher",
@@ -880,7 +905,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/user-switching/",
-            "time": "2014-05-01 22:40:02"
+            "time": "2014-09-04 16:40:39"
         },
         {
             "name": "wpackagist-plugin/wcm-user-language-switcher",
@@ -907,18 +932,10 @@
             "time": "2013-10-15 22:50:17"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }
