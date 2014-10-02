@@ -17,13 +17,13 @@
 // ** MySQL settings - You can get this info from your web host ** //
 
 if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
-    define('WP_ENV', 'dev');
+    define('WP_ENV', 'local');
 } else {
     define('WP_ENV', 'prod');
 }
 
-if ( WP_ENV == 'dev' ) {
-    define('DB_NAME', 'stoke_db');
+if ( WP_ENV == 'local' ) {
+    define('DB_NAME', 'local_db');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
     define('DB_HOST', 'localhost');
