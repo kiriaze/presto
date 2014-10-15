@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b7e7bb9a94c3fbd34da6b85f6c3751e",
+    "hash": "df6a1200fba983a926bfab4b52fa5aeb",
     "packages": [
         {
             "name": "composer/installers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078"
+                "reference": "09e2192a7cd08008e273355fddd38942d8de2992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
-                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
+                "url": "https://api.github.com/repos/composer/installers/zipball/09e2192a7cd08008e273355fddd38942d8de2992",
+                "reference": "09e2192a7cd08008e273355fddd38942d8de2992",
                 "shasum": ""
             },
             "replace": {
@@ -96,7 +96,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-09-25 03:36:45"
+            "time": "2014-10-15 03:40:33"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -171,7 +171,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-09-02 23:18:58"
+            "time": "2014-10-08 20:51:21"
         },
         {
             "name": "simple-framework",
@@ -1026,30 +1026,6 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/user-switching/",
             "time": "2014-09-04 16:40:39"
-        },
-        {
-            "name": "wpackagist-plugin/wcm-user-language-switcher",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wcm-user-language-switcher/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wcm-user-language-switcher.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/wcm-user-language-switcher": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/wcm-user-language-switcher/",
-            "time": "2013-10-15 22:50:17"
         }
     ],
     "aliases": [],
