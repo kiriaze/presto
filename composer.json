@@ -1,0 +1,159 @@
+{
+    "name"        : "kiriaze/PressPlay",
+
+    "description" : "Composer backed boilerplate project for easy WordPress sites",
+
+    "authors"     : [
+        {
+            "name"                              : "Constantine Kiriaze",
+            "email"                             : "hello@kiriaze.com",
+            "homepage"                          : "http://kiriaze.com/"
+        }
+    ],
+
+    "type"        : "project",
+
+    "minimum-stability": "dev",
+
+    "require"     : {
+        "wordpress"                                    : "*",
+        "wpackagist-plugin/advanced-custom-fields"     : "*",
+        "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
+        "wpackagist-plugin/wp-super-cache"             : "*",
+        "wpackagist-plugin/varnish-http-purge"         : "*",
+        "wpackagist-plugin/duplicate-post"             : "*",
+        "wpackagist-plugin/post-thumbnail-editor"      : "*",
+        "wpackagist-plugin/limit-login-attempts"       : "*",
+        "wpackagist-plugin/wordpress-importer"         : "*",
+        "wpackagist-plugin/intuitive-custom-post-order": "*",
+        "wpackagist-plugin/gathercontent-import"       : "*",
+        "wpackagist-plugin/backwpup"                   : "*",
+        "wpackagist-plugin/autoptimize"                : "*",
+        "wpackagist-plugin/disqus-comment-system"      : "*",
+        "wpackagist-plugin/bj-lazy-load"               : "*",
+        "wpackagist-plugin/wordpress-seo"              : "*",
+        "wpackagist-plugin/hammy"                      : "*",
+        "wpackagist-plugin/author-recommended-posts"   : "*",
+        "wpackagist-plugin/theme-my-login"             : "*",
+        "simple-framework"                             : "*",
+        "simple"                                       : "*",
+        "simple-child"                                 : "*",
+        "simple-shortcodes"                            : "*",
+        "github-updater"                               : "*"
+    },
+
+    "require-dev" : {
+        "wpackagist-plugin/log-deprecated-notices"     : "*",
+        "wpackagist-plugin/core-control"               : "*",
+        "wpackagist-plugin/monster-widget"             : "*",
+        "wpackagist-plugin/regenerate-thumbnails"      : "*",
+        "wpackagist-plugin/toolbar-theme-switcher"     : "*",
+        "wpackagist-plugin/user-switching"             : "*",
+        "wpackagist-plugin/rtl-tester"                 : "*",
+        "wpackagist-plugin/rewrite-rules-inspector"    : "*",
+        "wpackagist-plugin/query-monitor"              : "*",
+        "wpackagist-plugin/p3-profiler"                : "*",
+        "wpackagist-plugin/log-viewer"                 : "*",
+        "wpackagist-plugin/developer"                  : "*",
+        "wpackagist-plugin/debug-bar"                  : "*",
+        "wpackagist-plugin/debug-bar-cron"             : "*",
+        "wpackagist-plugin/debug-bar-console"          : "*",
+        "wpackagist-plugin/debug-bar-extender"         : "*"
+    },
+
+    "extra"       : {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress"
+    },
+
+    "config"      : {
+        "vendor-dir"                            :  "wp-content/vendor"
+    },
+
+    "repositories": [
+        {
+            "type"                              : "composer",
+            "url"                               : "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "type": "webroot",
+                "name": "wordpress",
+                "version": "3.8.0",
+                "dist": {
+                    "url": "https://github.com/WordPress/WordPress/archive/3.8.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-framework",
+                "version": "dev-master",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-framework.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple",
+                "version": "dev-master",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-child",
+                "version": "dev-master",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-child.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-shortcodes",
+                "type": "wordpress-plugin",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-shortcodes.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "github-updater",
+                "type": "wordpress-plugin",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/afragen/github-updater.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        }
+    ]
+}
