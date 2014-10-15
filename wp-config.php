@@ -23,12 +23,11 @@ if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
 }
 
 if ( WP_ENV == 'local' ) {
-    define('DB_NAME', 'wordpress_development'); // wordpress_development
+    define('DB_NAME', 'local_db');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
     define('DB_HOST', 'localhost');
-    define('DEBUG', false);
-
+    define('DEBUG', true);
 } else {
     define('DB_NAME', 'prod_db');
     define('DB_USER', 'username');
@@ -72,8 +71,9 @@ define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
 // =============================================
 // Set first theme (framework) as Default theme
 // =============================================
-// $default_theme = ucfirst(scandir(WP_CONTENT_DIR . '/themes', 1)[0]);
-// define('WP_DEFAULT_THEME', $default_theme);
+$default_theme = ucfirst(scandir(WP_CONTENT_DIR . '/themes', 1)[0]);
+define('WP_DEFAULT_THEME', $default_theme);
+
 
 // ================================================
 // You almost certainly do not want to change these
