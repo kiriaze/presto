@@ -5,14 +5,14 @@ Composer backed project for easy WordPress sites using the [Simple Framework](ht
 Learn more about Simple and its components or [skip to the good stuff](#installation)
 
 - [getsimple.io](http://getsimple.io)
-- [Simple](https://github.com/kiriaze/simple)
-- [Simple Child](https://github.com/kiriaze/simple-child)
-- [Simple HTML](https://github.com/kiriaze/simple-html)
-- [Simple Framework](https://github.com/kiriaze/simple-framework)
-- [VVV Simple](https://github.com/kiriaze/vvv-simple)
-- [Simple Grid](https://github.com/kiriaze/Simple-Grid)
-- [Simple Anchors](https://github.com/kiriaze/SimpleAnchors)
-- [Animate Scss](https://github.com/kiriaze/animate.scss)
+- [Simple](https://github.com/kiriaze/simple) ( parent framework )
+- [Simple Child](https://github.com/kiriaze/simple-child) ( child framework )
+- [Simple HTML](https://github.com/kiriaze/simple-html) ( front end )
+- [Simple Framework](https://github.com/kiriaze/simple-framework) ( standalone version - non parent/child )
+- [VVV Simple](https://github.com/kiriaze/vvv-simple) ( an alternative to PressPlay, if you have vagrant setup, run this instead, a one click solution so to speak )
+- [Simple Grid](https://github.com/kiriaze/Simple-Grid) ( and stupid simple grid thats semantic, extendable, and actually makes sense )
+- [Simple Anchors](https://github.com/kiriaze/SimpleAnchors) ( a data attr scrolling plugin with some awesomeness baked in )
+- [Animate Scss](https://github.com/kiriaze/animate.scss) ( fork of Dan Edens Animate.css )
 
 ---
 
