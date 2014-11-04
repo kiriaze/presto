@@ -30,7 +30,7 @@ Want your mac to dev fly shit all day? [check it homie.](https://github.com/kiri
 ---
 
 ## Assumptions
-You have a similar setup to the link above. OSX. Codekit.
+You have a similar setup to the link above. OSX. Codekit. SequelPro.
 
 Currently depends on Codekit for theme dev right out the box, cuz it just works like butter. Its possible to work with guard if you dont wanna deal with having a carefree life, but gets messy if both are used in a team environment. Guard shits on grunt, gulps alright too - but codekit takes the gold.
 
@@ -44,22 +44,34 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
     $ cd PROJECTNAME
     $ composer install
 
-1. add your project.dev to your hosts file
-2. add your dir to httpd-vhosts file
-3. sudo chown -R _www DIR;
-4. sudo chmod -R g+w DIR;
+1. add your project to your hosts file
+    * `subl /etc/hosts` - subl to open in sublime.
+    * add `127.0.0.1 {PROJECTNAME}.dev`
+2. add to your vhosts file
+    * `subl /etc/apache2/extra/httpd-vhosts.conf`
+    *
+    ```
+    <VirtualHost *:80>
+        DocumentRoot "path/to/your/project"
+        ServerName {PROJECTNAME}.dev
+    </VirtualHost>
+    ```
+3. set permissions
+    * `sudo chown -R _www DIR`
+    * `sudo chmod -R g+w DIR`
 5. restart apache
-6. create db
-7. update wp-config.php
-8. comment out wp files in git ignore
-9. rm -rf .git from root
-10. rm -rf .git from simple-child/simple-framework
-11. rename
-    * simple-framework/simple-child to project name
+    * `sudo apachectl restart`
+6. create your database.
+7. update wp-config.php to connect to your db.
+8. comment out wp files in git ignore.
+9. rm -rf .git from root of project.
+10. rm -rf .git from simple-child and/or simple-framework
+11. rename these files:
+    * simple-framework and/or simple-child to project name
     * style.css names
     * app.js THEMENAME/SHORTNAME refs
-12. add youre new remote
-13. drag project theme to into codekit
+12. add youre new remote.
+13. drag project theme to into codekit. ( comes with codekit.conf )
 14. make dope shit.
 
 ---
