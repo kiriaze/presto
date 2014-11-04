@@ -26,7 +26,7 @@ if ( WP_ENV == 'local' ) {
     define('DB_NAME', 'local_db');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
-    define('DB_HOST', 'localhost');
+    define('DB_HOST', '127.0.0.1'); // some need localhost
     define('DEBUG', true);
 } else {
     define('DB_NAME', 'prod_db');
