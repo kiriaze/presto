@@ -16,3 +16,23 @@ Thumbs.db
 ############################
 wp
 wp-content
+
+############################
+# Ignore Dev Plugins #
+############################
+wp-content/plugins/log-deprecated-notices
+wp-content/plugins/core-control
+wp-content/plugins/monster-widget
+wp-content/plugins/regenerate-thumbnails
+wp-content/plugins/toolbar-theme-switcher
+wp-content/plugins/user-switching
+wp-content/plugins/rtl-tester
+wp-content/plugins/rewrite-rules-inspector
+wp-content/plugins/query-monitor
+wp-content/plugins/p3-profiler
+wp-content/plugins/log-viewer
+wp-content/plugins/developer"
+wp-content/plugins/debug-bar
+wp-content/plugins/debug-bar-cron
+wp-content/plugins/debug-bar-console
+wp-content/plugins/debug-bar-extender

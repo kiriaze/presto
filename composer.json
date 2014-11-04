@@ -32,13 +32,13 @@
         "wpackagist-plugin/disqus-comment-system"      : "*",
         "wpackagist-plugin/bj-lazy-load"               : "*",
         "wpackagist-plugin/wordpress-seo"              : "*",
-        "wpackagist-plugin/hammy"                      : "*",
         "wpackagist-plugin/author-recommended-posts"   : "*",
         "wpackagist-plugin/theme-my-login"             : "*",
         "simple-framework"                             : "*",
         "simple"                                       : "*",
         "simple-child"                                 : "*",
         "simple-shortcodes"                            : "*",
+        "simple-cpt-plugin"                            : "*",
         "github-updater"                               : "*"
     },
 
@@ -137,6 +137,19 @@
                 "version": "dev-master",
                 "source": {
                     "url": "git://github.com/kiriaze/simple-shortcodes.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-cpt-plugin",
+                "type": "wordpress-plugin",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-cpt-plugin.git",
                     "type": "git",
                     "reference": "origin/master"
                 }
