@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ed8aef6109c90f4c960da7be20da2c9c",
+    "hash": "c7ee623ad63241fed5bfc1f44b1d7eee",
     "packages": [
         {
             "name": "composer/installers",
@@ -436,30 +436,6 @@
             "time": "2014-09-30 15:52:54"
         },
         {
-            "name": "wpackagist-plugin/hammy",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/hammy/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/hammy.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/hammy": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/hammy/",
-            "time": "2014-02-16 08:27:14"
-        },
-        {
             "name": "wpackagist-plugin/intuitive-custom-post-order",
             "version": "dev-trunk",
             "source": {
@@ -796,6 +772,30 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/developer/",
             "time": "2013-10-18 23:10:21"
+        },
+        {
+            "name": "wpackagist-plugin/hammy",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/hammy/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/hammy.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/hammy": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/hammy/",
+            "time": "2014-02-16 08:27:14"
         },
         {
             "name": "wpackagist-plugin/log-deprecated-notices",
