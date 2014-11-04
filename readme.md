@@ -77,7 +77,7 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 ---
 
 ## Consists of
-1. the latest wordpress,
+1. the latest wordpress
 2. composer
     * plugins
         1. simple framework
@@ -91,9 +91,8 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 ---
 
 ## To Do:
-
 1. attempting one liner for future ref in conjunction with init.sh
-2.
+2. 
 curl -O http://wordpress.org/latest.tar.gz ; tar -xvzf latest.tar.gz ; mv wordpress/* . ; rmdir wordpress/ ; rm latest.tar.gz ; rmdir wordpress/ ; rm latest.tar.gz ; cp wp-config-sample.php wp-config.php ; mysql -u [username] -p[password] -e "create database [databasename];" ; nano wp-config.php; sudo apachectl graceful;
 
 ---
