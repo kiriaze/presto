@@ -48,8 +48,8 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
     * `subl /etc/hosts` - subl to open in sublime.
     * add `127.0.0.1 {PROJECTNAME}.dev`
 2. add to your vhosts file
-    * `subl /etc/apache2/extra/httpd-vhosts.conf`
-    *
+    1. `subl /etc/apache2/extra/httpd-vhosts.conf`
+    2. 
     ```
     <VirtualHost *:80>
         DocumentRoot "path/to/your/project"
