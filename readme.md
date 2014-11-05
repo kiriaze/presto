@@ -69,6 +69,7 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
     * simple
     * simple-child
     * simple-framework
+    * OR run/install composer on remote
 10. rename these files:
     * simple-framework and/or simple-child to project name
     * style.css names
