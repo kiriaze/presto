@@ -88,6 +88,8 @@ update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
 
 when updating gitignore, run `git rm -r --cached .` then re add/commit
 
+theme should add acf-pro license into wp admin - acf pro installed through private repo.
+
 ---
 
 ## Consists of

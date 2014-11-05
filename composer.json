@@ -39,7 +39,8 @@
         "simple-child"                                 : "*",
         "simple-shortcodes"                            : "*",
         "simple-cpt-plugin"                            : "*",
-        "github-updater"                               : "*"
+        "github-updater"                               : "*",
+        "acf-pro"                                      : "*"
     },
 
     "require-dev" : {
@@ -87,6 +88,19 @@
                 },
                 "require": {
                     "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "acf-pro",
+                "version": "master",
+                "type": "wordpress-plugin",
+                "source": {
+                    "url": "git@bitbucket.org:madebygrizzly/acf-pro.git",
+                    "type": "git",
+                    "reference": "origin/master"
                 }
             }
         },
