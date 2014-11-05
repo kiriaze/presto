@@ -77,6 +77,14 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 12. drag project theme to into codekit. ( comes with codekit.conf )
 13. make dope shit.
 
+DB search/replace query FTW
+```
+update wp_posts set guid = replace(guid, "OLD", "NEW");
+update wp_options set option_value = replace(option_value, "OLD", "NEW");
+update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+```
+
 ---
 
 ## Consists of
