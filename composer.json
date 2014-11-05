@@ -80,9 +80,9 @@
             "package": {
                 "type": "webroot",
                 "name": "wordpress",
-                "version": "3.8.0",
+                "version": "4.0",
                 "dist": {
-                    "url": "https://github.com/WordPress/WordPress/archive/3.8.zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                     "type": "zip"
                 },
                 "require": {

@@ -64,15 +64,18 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 6. create your database.
 7. update wp-config.php to connect to your db.
 8. comment out wp files in git ignore.
-9. rm -rf .git from root of project.
-10. rm -rf .git from simple-child and/or simple-framework
-11. rename these files:
+9. rm -rf .git from:
+    * root of project.
+    * simple
+    * simple-child
+    * simple-framework
+10. rename these files:
     * simple-framework and/or simple-child to project name
     * style.css names
     * app.js THEMENAME/SHORTNAME refs
-12. add youre new remote.
-13. drag project theme to into codekit. ( comes with codekit.conf )
-14. make dope shit.
+11. add youre new remote.
+12. drag project theme to into codekit. ( comes with codekit.conf )
+13. make dope shit.
 
 ---
 
