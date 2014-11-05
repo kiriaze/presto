@@ -66,10 +66,8 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 8. comment out wp files in git ignore.
 9. rm -rf .git from:
     * root of project.
-    * simple
     * simple-child
-    * simple-framework
-    * OR run/install composer on remote
+    * Run `composer install`
 10. rename these files:
     * simple-framework and/or simple-child to project name
     * style.css names
@@ -87,6 +85,8 @@ update wp_options set option_value = replace(option_value, "OLD", "NEW");
 update wp_posts set post_content = replace(post_content, "OLD", "NEW");
 update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
 ```
+
+when updating gitignore, run `git rm -r --cached .` then re add/commit
 
 ---
 

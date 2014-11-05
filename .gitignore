@@ -14,32 +14,21 @@ Thumbs.db
 ############################
 # Ignore unwanted WP files #
 ############################
+# core
 wp
-wp-content
 
+# wp-content
+wp-content/*.php
+wp-content/languages
+wp-content/plugins
+wp-content/upgrade
+wp-content/uploads
 
-############################
-# Ignore Dev Plugins #
-############################
-wp-content/plugins/log-deprecated-notices
-wp-content/plugins/core-control
-wp-content/plugins/monster-widget
-wp-content/plugins/regenerate-thumbnails
-wp-content/plugins/toolbar-theme-switcher
-wp-content/plugins/user-switching
-wp-content/plugins/rtl-tester
-wp-content/plugins/rewrite-rules-inspector
-wp-content/plugins/query-monitor
-wp-content/plugins/p3-profiler
-wp-content/plugins/log-viewer
-wp-content/plugins/developer"
-wp-content/plugins/debug-bar
-wp-content/plugins/debug-bar-cron
-wp-content/plugins/debug-bar-console
-wp-content/plugins/debug-bar-extender
+# wp-content/themes - everything but child
+wp-content/themes/*.php
+wp-content/themes/simple
+wp-content/themes/simple-child
+wp-content/themes/simple-framework
 
-
-############################
-# Ignore Composer Vendors
-############################
+# composer vendor
 wp-content/vendor
