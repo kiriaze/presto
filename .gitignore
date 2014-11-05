@@ -17,6 +17,7 @@ Thumbs.db
 wp
 wp-content
 
+
 ############################
 # Ignore Dev Plugins #
 ############################
@@ -36,3 +37,9 @@ wp-content/plugins/debug-bar
 wp-content/plugins/debug-bar-cron
 wp-content/plugins/debug-bar-console
 wp-content/plugins/debug-bar-extender
+
+
+############################
+# Ignore Composer Vendors
+############################
+wp-content/vendor
