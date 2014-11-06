@@ -40,7 +40,7 @@
         "simple-shortcodes"                            : "*",
         "simple-cpt-plugin"                            : "*",
         "github-updater"                               : "*",
-        "acf-pro"                                      : "*"
+        "advanced-custom-fields-pro"                   : "*"
     },
 
     "require-dev" : {
@@ -94,7 +94,7 @@
         {
             "type"                              : "package",
             "package": {
-                "name": "acf-pro",
+                "name": "advanced-custom-fields-pro",
                 "version": "master",
                 "type": "wordpress-plugin",
                 "source": {
