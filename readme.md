@@ -126,9 +126,9 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 #### Notes:
 	* When updating gitignore, run `git rm -r --cached .` then re add/commit
 	* Add acf-pro license into wp admin.
-    * If you add other plugins to your project, you have two options to keep them in sync.
-      * Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
-      * Add plugin to composer.json and run `composer update`
+	* If you add other plugins to your project, you have two options to keep them in sync.
+		* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
+		* Add plugin to composer.json and run `composer update`
 
 ---
 
