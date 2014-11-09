@@ -39,13 +39,15 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 ---
 
 ## Consists of
-1. the latest wordpress
-2. composer
-    * plugins
+1. Latest WP from 
+2. Composer
+    * themes
         1. simple framework
         2. simple parent framework
         3. simple child theme
-    * .htaccess
+	* plugins
+    	1. simple jasdfklajsdf;
+    * [.htaccess](https://gist.github.com/kiriaze/89799d8a31a8084920bc)
         1. permalinks
         2. media redirection to remote
     * project repo should also house a db dump
