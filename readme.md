@@ -24,7 +24,7 @@ Learn more about Simple and its components or [skip to the good stuff](#installa
 
 ---
 
-## Optional
+## Optional ( But highly encouraged.. )
 Want your mac to dev fly shit all day? [check it homie.](https://github.com/kiriaze/mac-dev-env)
 
 ---
@@ -34,38 +34,25 @@ You have a similar setup to the link above. OSX. Codekit. SequelPro.
 
 Currently depends on Codekit for theme dev right out the box, cuz it just works like butter. Its possible to work with guard if you dont wanna deal with having a carefree life, but gets messy if both are used in a team environment. Guard shits on grunt, gulps alright too - but codekit takes the gold.
 
-And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go back to school**.
+And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go back to school, kid._**
 
 ---
 
 ## [Installation](id:installation)
 
+1. Clone repo and run composer.
+	```
     $ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
     $ cd {Project-Name}
     $ composer install
+    ```
 
-1. Run [ghost](https://github.com/kiriaze/ghost) or do it manually, ugh.
-	* add your project to your hosts file
-    	* `subl /etc/hosts` - subl to open in sublime.
-	    * add `127.0.0.1 {Project-URL}.dev`
-	* add to your vhosts file
-    	* Open /etc/apache2/extra/httpd-vhosts.conf
-	    * Add the block below
-        ```
-        <VirtualHost *:80>
-            DocumentRoot "path/to/your/{Project-Name}"
-            ServerName {Project-URL}.dev
-        </VirtualHost>
-        ```
-	* restart apache
-    	* `sudo apachectl restart`
-    
+1. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
+    ```
+    curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
+    ```
 2. Create your database. ( Will move this into ghost.sh soon )
 3. Update wp-config.php to connect to your db.
-
-4. If you add other plugins to your project, you have two options to keep them in sync.
-	* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
-    * Add plugin to composer.json and run `composer update`
 	
 
 4. set permissions to project directory ( WP specific )
@@ -111,7 +98,6 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 13. Make dope shit yo.
 
 
-
 DB search/replace query FTW
 ```
 update wp_posts set guid = replace(guid, "OLD", "NEW");
@@ -120,9 +106,12 @@ update wp_posts set post_content = replace(post_content, "OLD", "NEW");
 update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
 ```
 
-when updating gitignore, run `git rm -r --cached .` then re add/commit
-
-theme should add acf-pro license into wp admin - acf pro installed through private repo.
+### Notes
+	* When updating gitignore, run `git rm -r --cached .` then re add/commit
+	* Add acf-pro license into wp admin.
+    * If you add other plugins to your project, you have two options to keep them in sync.
+      * Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
+      * Add plugin to composer.json and run `composer update`
 
 ---
 
