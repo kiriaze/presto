@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "2afdb40fd54ec43b8074f1ca5ecc6efd",
+    "hash": "cddf00fd38a6f65169437154472aae63",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -170,7 +171,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-11-05 23:58:41"
+            "time": "2014-10-03 17:40:06"
         },
         {
             "name": "simple-child",
@@ -181,7 +182,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-11-06 00:04:13"
+            "time": "2014-10-08 20:51:21"
         },
         {
             "name": "simple-cpt-plugin",
@@ -203,7 +204,18 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-11-06 00:00:20"
+            "time": "2014-08-27 21:33:34"
+        },
+        {
+            "name": "simple-multi-cpts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/kiriaze/simple-multi-cpts.git",
+                "reference": "origin/master"
+            },
+            "type": "wordpress-plugin",
+            "time": "2014-11-08 20:31:15"
         },
         {
             "name": "simple-shortcodes",
@@ -348,7 +360,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/bj-lazy-load/",
-            "time": "2014-10-14 09:37:13"
+            "time": "2014-09-29 22:58:50"
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
@@ -372,7 +384,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/disqus-comment-system/",
-            "time": "2014-11-05 21:48:28"
+            "time": "2014-06-24 00:43:16"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -516,7 +528,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/post-thumbnail-editor/",
-            "time": "2014-10-03 04:05:11"
+            "time": "2014-09-06 07:26:23"
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
@@ -588,7 +600,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-importer/",
-            "time": "2014-10-16 07:46:46"
+            "time": "2014-01-14 20:31:13"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -612,7 +624,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/",
-            "time": "2014-10-08 19:51:24"
+            "time": "2014-09-16 12:46:36"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
@@ -636,7 +648,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-super-cache/",
-            "time": "2014-10-10 15:07:07"
+            "time": "2014-09-04 15:16:08"
         }
     ],
     "packages-dev": [
@@ -878,7 +890,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/p3-profiler/",
-            "time": "2014-10-31 22:20:48"
+            "time": "2014-09-27 19:03:06"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
@@ -1028,6 +1040,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
+    "prefer-stable": false,
     "platform": [],
     "platform-dev": []
 }
