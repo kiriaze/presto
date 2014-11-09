@@ -89,28 +89,28 @@ $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
 5. Update Naming Conventions
 	* Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
     * Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.
-```
-/*
-Theme Name:  	Project Name
-Theme URI:  	http://projectname.com
-Author:  		Project Author
-Author URI:  	http://projectauthor.com
-Description:  	An awesome description.
-Template:       simple
-Version:  		1.0.0
-License: 		GNU General Public License v2 or later
-License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 	simple
-*/
-```
-* Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
-```
-# Update all THEMENAME/SHORTNAME refs within file
-# THEMENAME is the full name of your project, e.g. MyAwesomeProject
-# SHORTNAME is the acronym of the THEMENAME, e.g. MAP
-var SHORTNAME = window.THEMENAME; // example before
-var MAP = window.MyAwesomeProject; // example after
-```
+      ```
+      /*
+      Theme Name:  	Project Name
+      Theme URI:  	http://projectname.com
+      Author:  		Project Author
+      Author URI:  	http://projectauthor.com
+      Description:  	An awesome description.
+      Template:       simple
+      Version:  		1.0.0
+      License: 		GNU General Public License v2 or later
+      License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+      Text Domain: 	simple
+      */
+      ```
+    * Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
+      ```
+      # Update all THEMENAME/SHORTNAME refs within file
+      # THEMENAME is the full name of your project, e.g. MyAwesomeProject
+      # SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+      var SHORTNAME = window.THEMENAME; // example before
+      var MAP = window.MyAwesomeProject; // example after
+      ```
 
 7. Set permissions to project directory ( WP Updates Specific )
   ```
