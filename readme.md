@@ -67,21 +67,21 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 	```
 
 2. Create your database. ( Will move this into ghost.sh soon )
-```
-mysql -u {username} -p {password} -e "create database {databasename};"
-```
+  ```
+  mysql -u {username} -p {password} -e "create database {databasename};"
+  ```
 
 3. Update wp-config.php credentials to connect to your db.
 
 4. Update git remote in root of project and subsequent files.
-```
-# Remove git from root of your project
-$ rm -rf {Project-Name}/.git
-# Add your new remote to the root of your project
-$ git remote add origin https://path-to-repo.com/repo.git
-# Remove git from project theme
-$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
-```
+  ```
+  # Remove git from root of your project
+  $ rm -rf {Project-Name}/.git
+  # Add your new remote to the root of your project
+  $ git remote add origin https://path-to-repo.com/repo.git
+  # Remove git from project theme
+  $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+  ```
 
 5. Update Naming Conventions
     * Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
@@ -110,10 +110,10 @@ $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
 7. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
 
 8. Set permissions to project directory ( WP specific )
-```
-$ sudo chown -R _www {Project-Name}
-$ sudo chmod -R g+w {Project-Name}
-```
+  ```
+  $ sudo chown -R _www {Project-Name}
+  $ sudo chmod -R g+w {Project-Name}
+  ```
 
 9. Direct browser to {Project-Name}.dev/wp/wp-admin
 10. Activate Project Theme.
