@@ -1,23 +1,33 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "df6a1200fba983a926bfab4b52fa5aeb",
+    "hash": "2afdb40fd54ec43b8074f1ca5ecc6efd",
     "packages": [
+        {
+            "name": "advanced-custom-fields-pro",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:madebygrizzly/acf-pro.git",
+                "reference": "origin/master"
+            },
+            "type": "wordpress-plugin",
+            "time": "2014-11-05 22:55:35"
+        },
         {
             "name": "composer/installers",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "09e2192a7cd08008e273355fddd38942d8de2992"
+                "reference": "8024be9aa3ee446272937f46a8807fa52b337767"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/09e2192a7cd08008e273355fddd38942d8de2992",
-                "reference": "09e2192a7cd08008e273355fddd38942d8de2992",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8024be9aa3ee446272937f46a8807fa52b337767",
+                "reference": "8024be9aa3ee446272937f46a8807fa52b337767",
                 "shasum": ""
             },
             "replace": {
@@ -96,7 +106,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-10-15 03:40:33"
+            "time": "2014-11-01 17:51:50"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -149,7 +159,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-08-21 16:40:15"
+            "time": "2014-10-26 07:08:15"
         },
         {
             "name": "simple",
@@ -160,7 +170,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-10-03 17:40:06"
+            "time": "2014-11-05 23:58:41"
         },
         {
             "name": "simple-child",
@@ -171,7 +181,18 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-10-08 20:51:21"
+            "time": "2014-11-06 00:04:13"
+        },
+        {
+            "name": "simple-cpt-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/kiriaze/simple-cpt-plugin.git",
+                "reference": "origin/master"
+            },
+            "type": "wordpress-plugin",
+            "time": "2014-10-02 22:16:58"
         },
         {
             "name": "simple-framework",
@@ -182,7 +203,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-08-27 21:33:34"
+            "time": "2014-11-06 00:00:20"
         },
         {
             "name": "simple-shortcodes",
@@ -197,10 +218,10 @@
         },
         {
             "name": "wordpress",
-            "version": "3.8.0",
+            "version": "4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/3.8.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -327,7 +348,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/bj-lazy-load/",
-            "time": "2014-09-29 22:58:50"
+            "time": "2014-10-14 09:37:13"
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
@@ -351,7 +372,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/disqus-comment-system/",
-            "time": "2014-06-24 00:43:16"
+            "time": "2014-11-05 21:48:28"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -426,30 +447,6 @@
             "time": "2014-09-30 15:52:54"
         },
         {
-            "name": "wpackagist-plugin/hammy",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/hammy/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/hammy.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/hammy": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/hammy/",
-            "time": "2014-02-16 08:27:14"
-        },
-        {
             "name": "wpackagist-plugin/intuitive-custom-post-order",
             "version": "dev-trunk",
             "source": {
@@ -519,7 +516,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/post-thumbnail-editor/",
-            "time": "2014-09-06 07:26:23"
+            "time": "2014-10-03 04:05:11"
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
@@ -591,7 +588,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-importer/",
-            "time": "2014-01-14 20:31:13"
+            "time": "2014-10-16 07:46:46"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -615,7 +612,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/",
-            "time": "2014-09-16 12:46:36"
+            "time": "2014-10-08 19:51:24"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
@@ -639,7 +636,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-super-cache/",
-            "time": "2014-09-04 15:16:08"
+            "time": "2014-10-10 15:07:07"
         }
     ],
     "packages-dev": [
@@ -881,7 +878,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/p3-profiler/",
-            "time": "2014-09-27 19:03:06"
+            "time": "2014-10-31 22:20:48"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
@@ -1031,7 +1028,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
     "platform": [],
     "platform-dev": []
 }

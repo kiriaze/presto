@@ -11,8 +11,24 @@ Thumbs.db
 .htaccess
 
 
-############################
+########################################
 # Ignore unwanted WP files #
-############################
+########################################
+# core - using /* to be able to exclude
 wp
-wp-content
+
+# wp-content
+wp-content/*.php
+wp-content/languages
+wp-content/plugins/*
+wp-content/upgrade
+wp-content/uploads
+
+# wp-content/themes - everything but child
+wp-content/themes/*.php
+wp-content/themes/simple
+wp-content/themes/simple-child
+wp-content/themes/simple-framework
+
+# composer vendor
+wp-content/vendor

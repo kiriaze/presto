@@ -16,25 +16,28 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 
-if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
-    define('WP_ENV', 'local');
-} else {
-    define('WP_ENV', 'prod');
+$hostname = $_SERVER['HTTP_HOST']; // ex. localhost, site.dev, localhost/site etc...
+
+switch ($hostname) {
+
+    case 'local.dev':
+        define('DB_NAME', 'local_db');
+        define('DB_USER', 'root');
+        define('DB_PASSWORD', '');
+        define('DB_HOST', '127.0.0.1'); // some need localhost
+        define('DEBUG', true);
+        break;
+
+    default:
+        define('DB_NAME', 'prod_db');
+        define('DB_USER', 'username');
+        define('DB_PASSWORD', 'password');
+        define('DB_HOST', 'localhost');
+        define('DEBUG', true);
+        break;
+
 }
 
-if ( WP_ENV == 'local' ) {
-    define('DB_NAME', 'local_db');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', '');
-    define('DB_HOST', '127.0.0.1'); // some need localhost
-    define('DEBUG', true);
-} else {
-    define('DB_NAME', 'prod_db');
-    define('DB_USER', 'username');
-    define('DB_PASSWORD', 'password');
-    define('DB_HOST', 'localhost');
-    define('DEBUG', false);
-}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

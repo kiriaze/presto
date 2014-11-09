@@ -32,14 +32,15 @@
         "wpackagist-plugin/disqus-comment-system"      : "*",
         "wpackagist-plugin/bj-lazy-load"               : "*",
         "wpackagist-plugin/wordpress-seo"              : "*",
-        "wpackagist-plugin/hammy"                      : "*",
         "wpackagist-plugin/author-recommended-posts"   : "*",
         "wpackagist-plugin/theme-my-login"             : "*",
         "simple-framework"                             : "*",
         "simple"                                       : "*",
         "simple-child"                                 : "*",
         "simple-shortcodes"                            : "*",
-        "github-updater"                               : "*"
+        "simple-cpt-plugin"                            : "*",
+        "github-updater"                               : "*",
+        "advanced-custom-fields-pro"                   : "*"
     },
 
     "require-dev" : {
@@ -80,13 +81,26 @@
             "package": {
                 "type": "webroot",
                 "name": "wordpress",
-                "version": "3.8.0",
+                "version": "4.0",
                 "dist": {
-                    "url": "https://github.com/WordPress/WordPress/archive/3.8.zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                     "type": "zip"
                 },
                 "require": {
                     "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "advanced-custom-fields-pro",
+                "version": "master",
+                "type": "wordpress-plugin",
+                "source": {
+                    "url": "git@bitbucket.org:madebygrizzly/acf-pro.git",
+                    "type": "git",
+                    "reference": "origin/master"
                 }
             }
         },
@@ -137,6 +151,19 @@
                 "version": "dev-master",
                 "source": {
                     "url": "git://github.com/kiriaze/simple-shortcodes.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type"                              : "package",
+            "package": {
+                "name": "simple-cpt-plugin",
+                "type": "wordpress-plugin",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/kiriaze/simple-cpt-plugin.git",
                     "type": "git",
                     "reference": "origin/master"
                 }

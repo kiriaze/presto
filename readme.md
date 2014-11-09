@@ -24,7 +24,7 @@ Learn more about Simple and its components or [skip to the good stuff](#installa
 
 ---
 
-## Optional
+## Optional ( But highly encouraged.. )
 Want your mac to dev fly shit all day? [check it homie.](https://github.com/kiriaze/mac-dev-env)
 
 ---
@@ -34,66 +34,125 @@ You have a similar setup to the link above. OSX. Codekit. SequelPro.
 
 Currently depends on Codekit for theme dev right out the box, cuz it just works like butter. Its possible to work with guard if you dont wanna deal with having a carefree life, but gets messy if both are used in a team environment. Guard shits on grunt, gulps alright too - but codekit takes the gold.
 
-And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go back to school**.
-
----
-
-## [Installation](id:installation)
-
-    $ git clone https://raw.github.com/kiriaze/PressPlay PROJECTNAME
-    $ cd PROJECTNAME
-    $ composer install
-
-1. add your project to your hosts file
-    * `subl /etc/hosts` - subl to open in sublime.
-    * add `127.0.0.1 {PROJECTNAME}.dev`
-2. add to your vhosts file
-    1. `subl /etc/apache2/extra/httpd-vhosts.conf`
-    2. 
-    ```
-    <VirtualHost *:80>
-        DocumentRoot "path/to/your/project"
-        ServerName {PROJECTNAME}.dev
-    </VirtualHost>
-    ```
-3. set permissions
-    * `sudo chown -R _www DIR`
-    * `sudo chmod -R g+w DIR`
-5. restart apache
-    * `sudo apachectl restart`
-6. create your database.
-7. update wp-config.php to connect to your db.
-8. comment out wp files in git ignore.
-9. rm -rf .git from root of project.
-10. rm -rf .git from simple-child and/or simple-framework
-11. rename these files:
-    * simple-framework and/or simple-child to project name
-    * style.css names
-    * app.js THEMENAME/SHORTNAME refs
-12. add youre new remote.
-13. drag project theme to into codekit. ( comes with codekit.conf )
-14. make dope shit.
+And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go back to school, kid._**
 
 ---
 
 ## Consists of
-1. the latest wordpress
-2. composer
-    * plugins
+1. Latest WP from 
+2. Composer
+    * themes
         1. simple framework
         2. simple parent framework
         3. simple child theme
-    * .htaccess
+	* plugins
+		1. See full list within composer.json file.  
+    * [.htaccess](https://gist.github.com/kiriaze/89799d8a31a8084920bc) ( Currently ignored from repo )
         1. permalinks
         2. media redirection to remote
     * project repo should also house a db dump
 
 ---
 
+## [Installation](id:installation)
+
+1. Clone repo and run composer.
+  ```
+  $ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+  $ cd {Project-Name}
+  $ composer install
+  ```
+
+2. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
+  ```
+  curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
+  ```
+
+2. Create your database. ( Will move this into ghost.sh soon )
+  ```
+  # Default
+  $ mysql -u {username} -p {password} -e "create database {databasename};"
+  # If dev env setup with mac-dev-env/homebrew, use the line below instead
+  $ mysql -u root -p  -e "create database foo;"
+  ```
+
+4. Update git remote in root of project and subsequent files.
+  ```
+  # Remove git from root of your project
+  $ rm -rf {Project-Name}/.git
+  # Add your new remote to the root of your project
+  $ git remote add origin https://path-to-repo.com/repo.git
+  # Remove git from project theme
+  $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+  ```
+
+5. Update Naming Conventions
+	* Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
+    * Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.
+    
+      ```
+      /*
+      Theme Name:  	Project Name
+      Theme URI:  	http://projectname.com
+      Author:  		Project Author
+      Author URI:  	http://projectauthor.com
+      Description:  	An awesome description.
+      Template:       simple
+      Version:  		1.0.0
+      License: 		GNU General Public License v2 or later
+      License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+      Text Domain: 	simple
+      */
+      ```
+      
+    * Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
+    
+      ```
+      # Update all THEMENAME/SHORTNAME refs within file
+      # THEMENAME is the full name of your project, e.g. MyAwesomeProject
+      # SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+      var SHORTNAME = window.THEMENAME; // example before
+      var MAP = window.MyAwesomeProject; // example after
+      ```
+
+7. Set permissions to project directory ( WP Updates Specific )
+  ```
+  $ sudo chown -R _www {Project-Name}
+  $ sudo chmod -R g+w {Project-Name}
+  ```
+
+7. Update wp-config.php credentials to connect to your db.
+8. Direct browser to {Project-Name}.dev/wp/wp-admin
+9. Activate Project Theme.
+10. Update Site URL in WP Admin. ( And other settings through theme options )
+11. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
+12. Make dope shit yo.
+
+---
+
+## Notes:
+* When updating gitignore, run `$ git rm -r --cached .` then re add/commit
+* Add acf-pro license into wp admin.
+* If you add other plugins to your project, you have two options to keep them in sync.
+	* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
+	* Add plugin to composer.json and run `composer update`
+
+* DB search/replace mysql query { When importing/exporting local/remote dbs }
+  ```
+  update wp_posts set guid = replace(guid, "OLD", "NEW");
+  update wp_options set option_value = replace(option_value, "OLD", "NEW");
+  update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+  update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+  ```
+
+---
+
 ## To Do:
-1. attempting one liner for future ref in conjunction with init.sh
-2. 
-curl -O http://wordpress.org/latest.tar.gz ; tar -xvzf latest.tar.gz ; mv wordpress/* . ; rmdir wordpress/ ; rm latest.tar.gz ; rmdir wordpress/ ; rm latest.tar.gz ; cp wp-config-sample.php wp-config.php ; mysql -u [username] -p[password] -e "create database [databasename];" ; nano wp-config.php; sudo apachectl graceful;
+1. Add mysql db creation to ghost.sh
+2. Write db creds to wp-config.php from ghost.sh
+3. Convert ghost.sh to ruby script
+4. Integrate bower within simple-html
+5. Debug wp-setup within theme options on activation
 
 ---
 
