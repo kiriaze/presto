@@ -85,14 +85,14 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 
 5. Update Naming Conventions
     * Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
-    * Update wp-content/themes/{Project-Name}/style.css name refs accordingly.
+    * Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.
     ```
     /*
-    Theme Name:  	Simple Child
-    Theme URI:  	http://simple-child.com
-    Author:  		Constantine Kiriaze
-    Author URI:  	http://kiriaze.com
-    Description:  	Developed on Wordpress.
+    Theme Name:  	Project Name
+    Theme URI:  	http://projectname.com
+    Author:  		Project Author
+    Author URI:  	http://projectauthor.com
+    Description:  	An awesome description.
     Template:       simple
     Version:  		1.0.0
     License: 		GNU General Public License v2 or later
@@ -100,11 +100,13 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
     Text Domain: 	simple
     */
     ```
-    * Update wp-content/themes/{Project-Name}/assets/js/app.js THEMENAME/SHORTNAME refs
+    * Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
     ```
-    // THEMENAME is the full name of your project, e.g. MyAwesomeProject
-    // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
-    var SHORTNAME = window.THEMENAME;
+    # Update all THEMENAME/SHORTNAME refs within file
+    # THEMENAME is the full name of your project, e.g. MyAwesomeProject
+    # SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+    var SHORTNAME = window.THEMENAME; // example before
+    var MAP = window.MyAwesomeProject; // example after
     ```
 
 7. Set permissions to project directory ( WP Updates Specific )
