@@ -121,13 +121,6 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 12. Make dope shit yo.
 
 
-13. DB search/replace mysql query FTW
-    ```
-    update wp_posts set guid = replace(guid, "OLD", "NEW");
-    update wp_options set option_value = replace(option_value, "OLD", "NEW");
-    update wp_posts set post_content = replace(post_content, "OLD", "NEW");
-    update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
-    ```
 
 #### Notes:
 * When updating gitignore, run `$ git rm -r --cached .` then re add/commit
@@ -135,6 +128,14 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 * If you add other plugins to your project, you have two options to keep them in sync.
 	* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
 	* Add plugin to composer.json and run `composer update`
+
+* DB search/replace mysql query { When importing/exporting local/remote dbs }
+    ```
+    update wp_posts set guid = replace(guid, "OLD", "NEW");
+    update wp_options set option_value = replace(option_value, "OLD", "NEW");
+    update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+    update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+    ```
 
 ---
 
