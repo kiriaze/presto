@@ -68,7 +68,10 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 
 2. Create your database. ( Will move this into ghost.sh soon )
   ```
-  mysql -u {username} -p {password} -e "create database {databasename};"
+  # Default
+  $ mysql -u {username} -p {password} -e "create database {databasename};"
+  # If dev env setup with mac-dev-env/homebrew, use the line below instead
+  $ mysql -u root -p  -e "create database foo;"
   ```
 
 3. Update wp-config.php credentials to connect to your db.
