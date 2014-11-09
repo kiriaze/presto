@@ -40,43 +40,77 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **go ba
 
 ## [Installation](id:installation)
 
-    $ git clone https://raw.github.com/kiriaze/PressPlay PROJECTNAME
-    $ cd PROJECTNAME
+    $ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+    $ cd {Project-Name}
     $ composer install
 
-1. add your project to your hosts file
-    * `subl /etc/hosts` - subl to open in sublime.
-    * add `127.0.0.1 {PROJECTNAME}.dev`
-2. add to your vhosts file
-    1. `subl /etc/apache2/extra/httpd-vhosts.conf`
-    2. 
-    ```
-    <VirtualHost *:80>
-        DocumentRoot "path/to/your/project"
-        ServerName {PROJECTNAME}.dev
-    </VirtualHost>
-    ```
-3. set permissions
-    * `sudo chown -R _www DIR`
-    * `sudo chmod -R g+w DIR`
-5. restart apache
-    * `sudo apachectl restart`
-6. create your database.
-7. update wp-config.php to connect to your db.
-8. comment out wp files in git ignore.
-9. rm -rf .git from:
-    * root of project.
-    * simple-child
-    * Run `composer install`
-10. rename these files:
-    * simple-framework and/or simple-child to project name
-    * style.css names
-    * app.js THEMENAME/SHORTNAME refs
-11. add youre new remote.
-12. drag project theme to into codekit. ( comes with codekit.conf )
-13. make dope shit.
+1. Run [ghost](https://github.com/kiriaze/ghost) or do it manually, ugh.
+	* add your project to your hosts file
+    	* `subl /etc/hosts` - subl to open in sublime.
+	    * add `127.0.0.1 {Project-URL}.dev`
+	* add to your vhosts file
+    	* Open /etc/apache2/extra/httpd-vhosts.conf
+	    * Add the block below
+        ```
+        <VirtualHost *:80>
+            DocumentRoot "path/to/your/{Project-Name}"
+            ServerName {Project-URL}.dev
+        </VirtualHost>
+        ```
+	* restart apache
+    	* `sudo apachectl restart`
+    
+2. Create your database. ( Will move this into ghost.sh soon )
+3. Update wp-config.php to connect to your db.
 
-change site URL' in WP admin
+4. If you add other plugins to your project, you have two options to keep them in sync.
+	* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
+    * Add plugin to composer.json and run `composer update`
+	
+
+4. set permissions to project directory ( WP specific )
+    * `sudo chown -R _www {Project-Name}`
+    * `sudo chmod -R g+w {Project-Name}`
+
+9. Update git remote in root of project and subsequent files.
+	* `rm -rf {Project-Name}/.git` ( Root of project )
+    * `rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git`
+    * Run `composer install`
+    
+10. rename these files:
+    * Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
+    * Update style.css name refs accordingly.
+    	```
+        /*
+        Theme Name:  	Simple Child
+        Theme URI:  	http://simple-child.com
+        Author:  		Constantine Kiriaze
+        Author URI:  	http://kiriaze.com
+        Description:  	Developed on Wordpress.
+        Template:       simple
+        Version:  		1.0.0
+        License: 		GNU General Public License v2 or later
+        License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+        Text Domain: 	simple
+        */
+        ```
+    * Update app.js THEMENAME/SHORTNAME refs
+	    ```
+        // THEMENAME is the full name of your project, e.g. MyAwesomeProject
+        // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+        var SHORTNAME = window.THEMENAME;
+        ```
+    
+11. Add your remote to root of project.
+	* e.g. `git remote add origin https://path-to-repo.com/repo.git`
+12. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
+13. Update Site URL in WP Admin.
+14. Direct browser to {Project-Name}.dev/wp/wp-admin
+15. Activate Project Theme.
+16. Update Settings through theme options.
+13. Make dope shit yo.
+
+
 
 DB search/replace query FTW
 ```
