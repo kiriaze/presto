@@ -55,69 +55,68 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 ## [Installation](id:installation)
 
 1. Clone repo and run composer.
-	```
-    $ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
-    $ cd {Project-Name}
-    $ composer install
-    ```
+```
+$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+$ cd {Project-Name}
+$ composer install
+```
 
-1. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
-    ```
-    curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
-	```
+2. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
+```
+curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
+```
 
 2. Create your database. ( Will move this into ghost.sh soon )
-  ```
-  # Default
-  $ mysql -u {username} -p {password} -e "create database {databasename};"
-  # If dev env setup with mac-dev-env/homebrew, use the line below instead
-  $ mysql -u root -p  -e "create database foo;"
-  ```
-
-3. Update wp-config.php credentials to connect to your db.
+```
+# Default
+$ mysql -u {username} -p {password} -e "create database {databasename};"
+# If dev env setup with mac-dev-env/homebrew, use the line below instead
+$ mysql -u root -p  -e "create database foo;"
+```
 
 4. Update git remote in root of project and subsequent files.
-  ```
-  # Remove git from root of your project
-  $ rm -rf {Project-Name}/.git
-  # Add your new remote to the root of your project
-  $ git remote add origin https://path-to-repo.com/repo.git
-  # Remove git from project theme
-  $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
-  ```
+```
+# Remove git from root of your project
+$ rm -rf {Project-Name}/.git
+# Add your new remote to the root of your project
+$ git remote add origin https://path-to-repo.com/repo.git
+# Remove git from project theme
+$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+```
 
 5. Update Naming Conventions
-    * Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
+	* Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
     * Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.
-    ```
-    /*
-    Theme Name:  	Project Name
-    Theme URI:  	http://projectname.com
-    Author:  		Project Author
-    Author URI:  	http://projectauthor.com
-    Description:  	An awesome description.
-    Template:       simple
-    Version:  		1.0.0
-    License: 		GNU General Public License v2 or later
-    License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
-    Text Domain: 	simple
-    */
-    ```
-    * Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
-    ```
-    # Update all THEMENAME/SHORTNAME refs within file
-    # THEMENAME is the full name of your project, e.g. MyAwesomeProject
-    # SHORTNAME is the acronym of the THEMENAME, e.g. MAP
-    var SHORTNAME = window.THEMENAME; // example before
-    var MAP = window.MyAwesomeProject; // example after
-    ```
+```
+/*
+Theme Name:  	Project Name
+Theme URI:  	http://projectname.com
+Author:  		Project Author
+Author URI:  	http://projectauthor.com
+Description:  	An awesome description.
+Template:       simple
+Version:  		1.0.0
+License: 		GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 	simple
+*/
+```
+* Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
+```
+# Update all THEMENAME/SHORTNAME refs within file
+# THEMENAME is the full name of your project, e.g. MyAwesomeProject
+# SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+var SHORTNAME = window.THEMENAME; // example before
+var MAP = window.MyAwesomeProject; // example after
+```
 
 7. Set permissions to project directory ( WP Updates Specific )
-  ```
-  $ sudo chown -R _www {Project-Name}
-  $ sudo chmod -R g+w {Project-Name}
-  ```
+```
+$ sudo chown -R _www {Project-Name}
+$ sudo chmod -R g+w {Project-Name}
+```
 
+7. Update wp-config.php credentials to connect to your db.
 8. Direct browser to {Project-Name}.dev/wp/wp-admin
 9. Activate Project Theme.
 10. Update Site URL in WP Admin. ( And other settings through theme options )
@@ -134,12 +133,12 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 	* Add plugin to composer.json and run `composer update`
 
 * DB search/replace mysql query { When importing/exporting local/remote dbs }
-    ```
-    update wp_posts set guid = replace(guid, "OLD", "NEW");
-    update wp_options set option_value = replace(option_value, "OLD", "NEW");
-    update wp_posts set post_content = replace(post_content, "OLD", "NEW");
-    update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
-    ```
+```
+update wp_posts set guid = replace(guid, "OLD", "NEW");
+update wp_options set option_value = replace(option_value, "OLD", "NEW");
+update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+```
 
 ---
 
