@@ -113,10 +113,10 @@ var MAP = window.MyAwesomeProject; // example after
 ```
 
 7. Set permissions to project directory ( WP Updates Specific )
-```
-$ sudo chown -R _www {Project-Name}
-$ sudo chmod -R g+w {Project-Name}
-```
+  ```
+  $ sudo chown -R _www {Project-Name}
+  $ sudo chmod -R g+w {Project-Name}
+  ```
 
 7. Update wp-config.php credentials to connect to your db.
 8. Direct browser to {Project-Name}.dev/wp/wp-admin
