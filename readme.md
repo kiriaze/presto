@@ -85,7 +85,7 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 
 5. Update Naming Conventions
     * Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
-    * Update style.css name refs accordingly.
+    * Update wp-content/themes/{Project-Name}/style.css name refs accordingly.
     ```
     /*
     Theme Name:  	Simple Child
@@ -100,24 +100,23 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
     Text Domain: 	simple
     */
     ```
-    * Update app.js THEMENAME/SHORTNAME refs
+    * Update wp-content/themes/{Project-Name}/assets/js/app.js THEMENAME/SHORTNAME refs
     ```
     // THEMENAME is the full name of your project, e.g. MyAwesomeProject
     // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
     var SHORTNAME = window.THEMENAME;
     ```
 
-7. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
-
-8. Set permissions to project directory ( WP specific )
+7. Set permissions to project directory ( WP Updates Specific )
   ```
   $ sudo chown -R _www {Project-Name}
   $ sudo chmod -R g+w {Project-Name}
   ```
 
-9. Direct browser to {Project-Name}.dev/wp/wp-admin
-10. Activate Project Theme.
-11. Update Site URL in WP Admin. ( And other settings through theme options )
+8. Direct browser to {Project-Name}.dev/wp/wp-admin
+9. Activate Project Theme.
+10. Update Site URL in WP Admin. ( And other settings through theme options )
+11. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
 12. Make dope shit yo.
 
 ---
