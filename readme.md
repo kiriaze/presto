@@ -74,17 +74,17 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 3. Update wp-config.php credentials to connect to your db.
 
 4. Update git remote in root of project and subsequent files.
-  ```
-  # Remove git from root of your project
-  $ rm -rf {Project-Name}/.git
-  # Add your new remote to the root of your project
-  $ git remote add origin https://path-to-repo.com/repo.git
-  # Remove git from project theme
-  $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
-  ```
+```
+# Remove git from root of your project
+$ rm -rf {Project-Name}/.git
+# Add your new remote to the root of your project
+$ git remote add origin https://path-to-repo.com/repo.git
+# Remove git from project theme
+$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+```
 
 5. Update Naming Conventions
-    * Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
+    * Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
     * Update style.css name refs accordingly.
     	```
         /*
