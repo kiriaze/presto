@@ -101,11 +101,11 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
     */
     ```
     * Update app.js THEMENAME/SHORTNAME refs
-	    ```
-        // THEMENAME is the full name of your project, e.g. MyAwesomeProject
-        // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
-        var SHORTNAME = window.THEMENAME;
-        ```
+    ```
+    // THEMENAME is the full name of your project, e.g. MyAwesomeProject
+    // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+    var SHORTNAME = window.THEMENAME;
+    ```
 
 7. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
 
