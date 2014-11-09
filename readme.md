@@ -120,7 +120,7 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 11. Update Site URL in WP Admin. ( And other settings through theme options )
 12. Make dope shit yo.
 
-
+---
 
 #### Notes:
 * When updating gitignore, run `$ git rm -r --cached .` then re add/commit
