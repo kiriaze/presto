@@ -38,6 +38,20 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 
 ---
 
+## Consists of
+1. the latest wordpress
+2. composer
+    * plugins
+        1. simple framework
+        2. simple parent framework
+        3. simple child theme
+    * .htaccess
+        1. permalinks
+        2. media redirection to remote
+    * project repo should also house a db dump
+
+---
+
 ## [Installation](id:installation)
 
 1. Clone repo and run composer.
@@ -55,16 +69,13 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 3. Update wp-config.php to connect to your db.
 	
 
-4. set permissions to project directory ( WP specific )
-    * `sudo chown -R _www {Project-Name}`
-    * `sudo chmod -R g+w {Project-Name}`
-
-9. Update git remote in root of project and subsequent files.
+4. Update git remote in root of project and subsequent files.
 	* `rm -rf {Project-Name}/.git` ( Root of project )
     * `rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git`
     * Run `composer install`
-    
-10. rename these files:
+
+
+5. Update Naming Conventions
     * Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
     * Update style.css name refs accordingly.
     	```
@@ -88,44 +99,36 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
         var SHORTNAME = window.THEMENAME;
         ```
     
-11. Add your remote to root of project.
+6. Update git remote in the root of your project.
+	* `rm -rf .git`
 	* e.g. `git remote add origin https://path-to-repo.com/repo.git`
-12. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
-13. Update Site URL in WP Admin.
-14. Direct browser to {Project-Name}.dev/wp/wp-admin
-15. Activate Project Theme.
-16. Update Settings through theme options.
-13. Make dope shit yo.
+7. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
+
+8. Set permissions to project directory ( WP specific )
+    * `sudo chown -R _www {Project-Name}`
+    * `sudo chmod -R g+w {Project-Name}`
 
 
-DB search/replace query FTW
-```
-update wp_posts set guid = replace(guid, "OLD", "NEW");
-update wp_options set option_value = replace(option_value, "OLD", "NEW");
-update wp_posts set post_content = replace(post_content, "OLD", "NEW");
-update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
-```
+9. Direct browser to {Project-Name}.dev/wp/wp-admin
+10. Activate Project Theme.
+11. Update Site URL in WP Admin. ( And other settings through theme options )
+12. Make dope shit yo.
 
-### Notes
+
+13. DB search/replace query FTW
+    ```
+    update wp_posts set guid = replace(guid, "OLD", "NEW");
+    update wp_options set option_value = replace(option_value, "OLD", "NEW");
+    update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+    update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+    ```
+
+#### Notes:
 	* When updating gitignore, run `git rm -r --cached .` then re add/commit
 	* Add acf-pro license into wp admin.
     * If you add other plugins to your project, you have two options to keep them in sync.
       * Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
       * Add plugin to composer.json and run `composer update`
-
----
-
-## Consists of
-1. the latest wordpress
-2. composer
-    * plugins
-        1. simple framework
-        2. simple parent framework
-        3. simple child theme
-    * .htaccess
-        1. permalinks
-        2. media redirection to remote
-    * project repo should also house a db dump
 
 ---
 
