@@ -57,38 +57,39 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 ## [Installation](id:installation)
 
 1. Clone repo and run composer.
-```
-$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
-$ cd {Project-Name}
-$ composer install
-```
+  ```
+  $ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+  $ cd {Project-Name}
+  $ composer install
+  ```
 
 2. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
-```
-curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
-```
+  ```
+  curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
+  ```
 
 2. Create your database. ( Will move this into ghost.sh soon )
-```
-# Default
-$ mysql -u {username} -p {password} -e "create database {databasename};"
-# If dev env setup with mac-dev-env/homebrew, use the line below instead
-$ mysql -u root -p  -e "create database foo;"
-```
+  ```
+  # Default
+  $ mysql -u {username} -p {password} -e "create database {databasename};"
+  # If dev env setup with mac-dev-env/homebrew, use the line below instead
+  $ mysql -u root -p  -e "create database foo;"
+  ```
 
 4. Update git remote in root of project and subsequent files.
-```
-# Remove git from root of your project
-$ rm -rf {Project-Name}/.git
-# Add your new remote to the root of your project
-$ git remote add origin https://path-to-repo.com/repo.git
-# Remove git from project theme
-$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
-```
+  ```
+  # Remove git from root of your project
+  $ rm -rf {Project-Name}/.git
+  # Add your new remote to the root of your project
+  $ git remote add origin https://path-to-repo.com/repo.git
+  # Remove git from project theme
+  $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+  ```
 
 5. Update Naming Conventions
 	* Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
     * Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.
+    
       ```
       /*
       Theme Name:  	Project Name
@@ -103,7 +104,9 @@ $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
       Text Domain: 	simple
       */
       ```
+      
     * Update `wp-content/themes/{Project-Name}/assets/js/app.js` naming refs
+    
       ```
       # Update all THEMENAME/SHORTNAME refs within file
       # THEMENAME is the full name of your project, e.g. MyAwesomeProject
@@ -135,12 +138,12 @@ $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
 	* Add plugin to composer.json and run `composer update`
 
 * DB search/replace mysql query { When importing/exporting local/remote dbs }
-```
-update wp_posts set guid = replace(guid, "OLD", "NEW");
-update wp_options set option_value = replace(option_value, "OLD", "NEW");
-update wp_posts set post_content = replace(post_content, "OLD", "NEW");
-update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
-```
+  ```
+  update wp_posts set guid = replace(guid, "OLD", "NEW");
+  update wp_options set option_value = replace(option_value, "OLD", "NEW");
+  update wp_posts set post_content = replace(post_content, "OLD", "NEW");
+  update wp_postmeta set meta_value = replace(meta_value, "OLD", "NEW");
+  ```
 
 ---
 
