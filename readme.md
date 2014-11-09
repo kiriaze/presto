@@ -64,16 +64,24 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 1. Run [ghost](https://github.com/kiriaze/ghost). ( Follow instructions through cli )
     ```
     curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh > /tmp; bash /tmp/ghost
-    ```
+	```
+
 2. Create your database. ( Will move this into ghost.sh soon )
-3. Update wp-config.php to connect to your db.
-	
+```
+mysql -u {username} -p {password} -e "create database {databasename};"
+```
+
+3. Update wp-config.php credentials to connect to your db.
 
 4. Update git remote in root of project and subsequent files.
-	* `rm -rf {Project-Name}/.git` ( Root of project )
-    * `rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git`
-    * Run `composer install`
-
+```
+# Remove git from root of your project
+$ rm -rf {Project-Name}/.git
+# Add your new remote to the root of your project
+$ git remote add origin https://path-to-repo.com/repo.git
+# Remove git from project theme
+$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+```
 
 5. Update Naming Conventions
     * Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )
@@ -98,16 +106,14 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
         // SHORTNAME is the acronym of the THEMENAME, e.g. MAP
         var SHORTNAME = window.THEMENAME;
         ```
-    
-6. Update git remote in the root of your project.
-	* `rm -rf .git`
-	* e.g. `git remote add origin https://path-to-repo.com/repo.git`
+
 7. Drag your project _**Theme**_ into codekit. ( comes with preconfigured codekit.conf )
 
 8. Set permissions to project directory ( WP specific )
-    * `sudo chown -R _www {Project-Name}`
-    * `sudo chmod -R g+w {Project-Name}`
-
+```
+$ sudo chown -R _www {Project-Name}
+$ sudo chmod -R g+w {Project-Name}
+```
 
 9. Direct browser to {Project-Name}.dev/wp/wp-admin
 10. Activate Project Theme.
@@ -115,7 +121,7 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 12. Make dope shit yo.
 
 
-13. DB search/replace query FTW
+13. DB search/replace mysql query FTW
     ```
     update wp_posts set guid = replace(guid, "OLD", "NEW");
     update wp_options set option_value = replace(option_value, "OLD", "NEW");
@@ -124,11 +130,11 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
     ```
 
 #### Notes:
-	* When updating gitignore, run `git rm -r --cached .` then re add/commit
-	* Add acf-pro license into wp admin.
-	* If you add other plugins to your project, you have two options to keep them in sync.
-		* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
-		* Add plugin to composer.json and run `composer update`
+* When updating gitignore, run `$ git rm -r --cached .` then re add/commit
+* Add acf-pro license into wp admin.
+* If you add other plugins to your project, you have two options to keep them in sync.
+	* Exclude from .gitignore with `!wp-content/plugins/{plugin-name}`
+	* Add plugin to composer.json and run `composer update`
 
 ---
 
