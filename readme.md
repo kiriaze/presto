@@ -149,7 +149,10 @@ And if you're using a wysiwyg editor or mamp or a bloated ide like coda, **_go b
 
 ## To Do:
 1. Add mysql db creation to ghost.sh
-2. 
+2. Write db creds to wp-config.php from ghost.sh
+3. Convert ghost.sh to ruby script
+4. Integrate bower within simple-html
+5. Debug wp-setup within theme options on activation
 
 ---
 
