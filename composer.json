@@ -17,23 +17,24 @@
 
     "require"     : {
         "wordpress"                                    : "*",
-        "wpackagist-plugin/advanced-custom-fields"     : "*",
-        "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
-        "wpackagist-plugin/wp-super-cache"             : "*",
-        "wpackagist-plugin/varnish-http-purge"         : "*",
-        "wpackagist-plugin/duplicate-post"             : "*",
-        "wpackagist-plugin/post-thumbnail-editor"      : "*",
-        "wpackagist-plugin/limit-login-attempts"       : "*",
-        "wpackagist-plugin/wordpress-importer"         : "*",
-        "wpackagist-plugin/intuitive-custom-post-order": "*",
-        "wpackagist-plugin/gathercontent-import"       : "*",
         "wpackagist-plugin/backwpup"                   : "*",
+        "wpackagist-plugin/advanced-custom-fields"     : "*",
+        "advanced-custom-fields-pro"                   : "*",
+        "wpackagist-plugin/limit-login-attempts"       : "*",
+
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall" : "*",
+        "wpackagist-plugin/wordfence"                           : "*",
+        "wpackagist-plugin/sucuri-scanner"                      : "*",
+        "wpackagist-plugin/bulletproof-security"                : "*",
+
+        "wpackagist-plugin/demo-data-creator"          : "*",
+        "wpackagist-plugin/bulk-content-creator"       : "*",
+
+        "wpackagist-plugin/wp-super-cache"             : "*",
         "wpackagist-plugin/autoptimize"                : "*",
-        "wpackagist-plugin/disqus-comment-system"      : "*",
-        "wpackagist-plugin/bj-lazy-load"               : "*",
         "wpackagist-plugin/wordpress-seo"              : "*",
-        "wpackagist-plugin/author-recommended-posts"   : "*",
-        "wpackagist-plugin/theme-my-login"             : "*",
+        "wpackagist-plugin/disqus-comment-system"      : "*",
+
         "simple-framework"                             : "*",
         "simple"                                       : "*",
         "simple-child"                                 : "*",
@@ -41,26 +42,25 @@
         "simple-cpt-plugin"                            : "*",
         "simple-multi-cpts"                            : "*",
         "github-updater"                               : "*",
-        "advanced-custom-fields-pro"                   : "*"
+        "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
+
+        "wpackagist-plugin/duplicate-post"             : "*",
+        "wpackagist-plugin/wordpress-importer"         : "*",
+        "wpackagist-plugin/intuitive-custom-post-order": "*",
+        "wpackagist-plugin/bj-lazy-load"               : "*",
+        "wpackagist-plugin/author-recommended-posts"   : "*",
+        "wpackagist-plugin/theme-my-login"             : "*"
     },
 
     "require-dev" : {
         "wpackagist-plugin/log-deprecated-notices"     : "*",
-        "wpackagist-plugin/core-control"               : "*",
         "wpackagist-plugin/monster-widget"             : "*",
-        "wpackagist-plugin/regenerate-thumbnails"      : "*",
-        "wpackagist-plugin/toolbar-theme-switcher"     : "*",
         "wpackagist-plugin/user-switching"             : "*",
-        "wpackagist-plugin/rtl-tester"                 : "*",
         "wpackagist-plugin/rewrite-rules-inspector"    : "*",
+        "wpackagist-plugin/regenerate-thumbnails"      : "*",
+        "wpackagist-plugin/wordpress-reset"            : "*",
         "wpackagist-plugin/query-monitor"              : "*",
-        "wpackagist-plugin/p3-profiler"                : "*",
-        "wpackagist-plugin/log-viewer"                 : "*",
-        "wpackagist-plugin/developer"                  : "*",
-        "wpackagist-plugin/debug-bar"                  : "*",
-        "wpackagist-plugin/debug-bar-cron"             : "*",
-        "wpackagist-plugin/debug-bar-console"          : "*",
-        "wpackagist-plugin/debug-bar-extender"         : "*"
+        "wpackagist-plugin/debug-bar"                  : "*"
     },
 
     "extra"       : {
