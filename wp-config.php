@@ -20,8 +20,8 @@ $hostname = $_SERVER['HTTP_HOST']; // ex. localhost, site.dev, localhost/site et
 
 switch ($hostname) {
 
-    case 'local.dev':
-        define('DB_NAME', 'local_db');
+    case 'pressplay.dev':
+        define('DB_NAME', 'pressplay_db');
         define('DB_USER', 'root');
         define('DB_PASSWORD', '');
         define('DB_HOST', '127.0.0.1'); // some need localhost
