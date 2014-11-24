@@ -16,9 +16,10 @@
     "minimum-stability": "dev",
 
     "require"     : {
+        "fancyguy/webroot-installer"                   : "1.0.0",
+
         "wordpress"                                    : "*",
         "wpackagist-plugin/backwpup"                   : "*",
-        "wpackagist-plugin/advanced-custom-fields"     : "*",
         "advanced-custom-fields-pro"                   : "*",
         "wpackagist-plugin/limit-login-attempts"       : "*",
 
@@ -86,9 +87,6 @@
                 "dist": {
                     "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                     "type": "zip"
-                },
-                "require": {
-                    "fancyguy/webroot-installer": "1.0.0"
                 }
             }
         },

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f52be1ce49fbc306a9c5d119e1a80e15",
+    "hash": "6bb25c2a3598b34187b6bbeccce032a5",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -23,12 +23,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767"
+                "reference": "91e7724e6e75291d6f5512415fbdcec525ad4d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8024be9aa3ee446272937f46a8807fa52b337767",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767",
+                "url": "https://api.github.com/repos/composer/installers/zipball/91e7724e6e75291d6f5512415fbdcec525ad4d7e",
+                "reference": "91e7724e6e75291d6f5512415fbdcec525ad4d7e",
                 "shasum": ""
             },
             "replace": {
@@ -80,6 +80,7 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -107,7 +108,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-11-01 17:51:50"
+            "time": "2014-11-23 19:34:57"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -160,7 +161,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-11-16 21:33:52"
+            "time": "2014-10-26 07:08:15"
         },
         {
             "name": "simple",
@@ -171,7 +172,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-11-14 18:11:36"
+            "time": "2014-11-23 19:46:51"
         },
         {
             "name": "simple-child",
@@ -182,7 +183,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-theme",
-            "time": "2014-11-07 23:06:42"
+            "time": "2014-11-22 00:59:48"
         },
         {
             "name": "simple-cpt-plugin",
@@ -215,7 +216,7 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-11-12 19:47:37"
+            "time": "2014-11-08 20:31:15"
         },
         {
             "name": "simple-shortcodes",
@@ -237,34 +238,7 @@
                 "reference": null,
                 "shasum": null
             },
-            "require": {
-                "fancyguy/webroot-installer": "1.0.0"
-            },
             "type": "webroot"
-        },
-        {
-            "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/advanced-custom-fields": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/",
-            "time": "2014-09-12 01:22:41"
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
@@ -360,7 +334,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/backwpup/",
-            "time": "2014-11-14 07:40:32"
+            "time": "2014-09-04 09:22:24"
         },
         {
             "name": "wpackagist-plugin/bj-lazy-load",
@@ -384,7 +358,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/bj-lazy-load/",
-            "time": "2014-10-14 09:37:13"
+            "time": "2014-09-29 22:58:50"
         },
         {
             "name": "wpackagist-plugin/bulk-content-creator",
@@ -432,7 +406,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/bulletproof-security/",
-            "time": "2014-11-06 00:03:15"
+            "time": "2014-11-19 00:05:48"
         },
         {
             "name": "wpackagist-plugin/demo-data-creator",
@@ -480,7 +454,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/disqus-comment-system/",
-            "time": "2014-11-10 23:52:45"
+            "time": "2014-06-24 00:43:16"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -600,7 +574,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/sucuri-scanner/",
-            "time": "2014-11-13 14:33:41"
+            "time": "2014-11-21 16:41:28"
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
@@ -648,7 +622,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordfence/",
-            "time": "2014-11-11 06:01:30"
+            "time": "2014-11-20 06:52:56"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -672,7 +646,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-importer/",
-            "time": "2014-10-16 07:46:46"
+            "time": "2014-01-14 20:31:13"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -696,7 +670,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/",
-            "time": "2014-10-08 19:51:24"
+            "time": "2014-09-16 12:46:36"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
@@ -720,7 +694,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-super-cache/",
-            "time": "2014-10-10 15:07:07"
+            "time": "2014-09-04 15:16:08"
         }
     ],
     "packages-dev": [
