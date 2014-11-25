@@ -36,12 +36,11 @@
         "wpackagist-plugin/wordpress-seo"              : "*",
         "wpackagist-plugin/disqus-comment-system"      : "*",
 
-        "simple-framework"                             : "*",
-        "simple"                                       : "*",
-        "simple-child"                                 : "*",
-        "simple-shortcodes"                            : "*",
-        "simple-cpt-plugin"                            : "*",
-        "simple-multi-cpts"                            : "*",
+        "simple/simple-framework"                      : "*",
+        "simple/simple-child"                          : "*",
+        "simple/simple-shortcodes"                     : "*",
+        "simple/simple-cpt-plugin"                     : "*",
+        "simple/simple-multi-cpts"                     : "*",
         "github-updater"                               : "*",
         "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
 
@@ -104,82 +103,24 @@
             }
         },
         {
-            "type"                              : "package",
-            "package": {
-                "name": "simple-framework",
-                "version": "dev-master",
-                "type": "wordpress-theme",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple-framework.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/kiriaze/simple-framework.git"
         },
         {
-            "type"                              : "package",
-            "package": {
-                "name": "simple",
-                "version": "dev-master",
-                "type": "wordpress-theme",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/kiriaze/simple-child.git"
         },
         {
-            "type"                              : "package",
-            "package": {
-                "name": "simple-child",
-                "version": "dev-master",
-                "type": "wordpress-theme",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple-child.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/kiriaze/simple-shortcodes.git"
         },
         {
-            "type"                              : "package",
-            "package": {
-                "name": "simple-shortcodes",
-                "type": "wordpress-plugin",
-                "version": "dev-master",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple-shortcodes.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/kiriaze/simple-cpt-plugin.git"
         },
         {
-            "type"                              : "package",
-            "package": {
-                "name": "simple-cpt-plugin",
-                "type": "wordpress-plugin",
-                "version": "dev-master",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple-cpt-plugin.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        },
-        {
-            "type"                              : "package",
-            "package": {
-                "name": "simple-multi-cpts",
-                "type": "wordpress-plugin",
-                "version": "dev-master",
-                "source": {
-                    "url": "git://github.com/kiriaze/simple-multi-cpts.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
+            "type": "vcs",
+            "url": "git://github.com/kiriaze/simple-multi-cpts.git"
         },
         {
             "type"                              : "package",
