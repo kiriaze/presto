@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "704457c2ed9c8f23ff8319ab8686ace7",
+    "hash": "5c8d06a29703090e17cf69fd8787bc40",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -637,6 +637,30 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/limit-login-attempts/",
             "time": "2012-06-01 18:26:09"
+        },
+        {
+            "name": "wpackagist-plugin/manual-image-crop",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/manual-image-crop/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/manual-image-crop.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/manual-image-crop": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/manual-image-crop/",
+            "time": "2014-10-12 19:46:00"
         },
         {
             "name": "wpackagist-plugin/sucuri-scanner",

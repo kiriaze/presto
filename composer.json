@@ -41,7 +41,6 @@
         "simple/simple-shortcodes"                     : "*",
         "simple/simple-cpt-plugin"                     : "*",
         "simple/simple-multi-cpts"                     : "*",
-        "github-updater"                               : "*",
         "wpackagist-plugin/fg-fix-serialized-strings"  : "*",
 
         "wpackagist-plugin/duplicate-post"             : "*",
@@ -49,7 +48,8 @@
         "wpackagist-plugin/intuitive-custom-post-order": "*",
         "wpackagist-plugin/bj-lazy-load"               : "*",
         "wpackagist-plugin/author-recommended-posts"   : "*",
-        "wpackagist-plugin/theme-my-login"             : "*"
+        "wpackagist-plugin/theme-my-login"             : "*",
+        "wpackagist-plugin/manual-image-crop"          : "*"
     },
 
     "require-dev" : {
