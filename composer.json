@@ -103,26 +103,6 @@
             }
         },
         {
-            "type": "vcs",
-            "url": "git://github.com/kiriaze/simple-framework.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git://github.com/kiriaze/simple-child.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git://github.com/kiriaze/simple-shortcodes.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git://github.com/kiriaze/simple-cpt-plugin.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git://github.com/kiriaze/simple-multi-cpts.git"
-        },
-        {
             "type"                              : "package",
             "package": {
                 "name": "github-updater",
@@ -134,6 +114,26 @@
                     "reference": "origin/master"
                 }
             }
+        },
+        {
+            "type"                              : "vcs",
+            "url": "git://github.com/kiriaze/simple-framework.git"
+        },
+        {
+            "type"                              : "vcs",
+            "url": "git://github.com/kiriaze/simple-child.git"
+        },
+        {
+            "type"                              : "vcs",
+            "url": "git://github.com/kiriaze/simple-shortcodes.git"
+        },
+        {
+            "type"                              : "vcs",
+            "url": "git://github.com/kiriaze/simple-cpt-plugin.git"
+        },
+        {
+            "type"                              : "vcs",
+            "url": "git://github.com/kiriaze/simple-multi-cpts.git"
         }
     ]
 }
