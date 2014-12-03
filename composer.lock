@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6bb25c2a3598b34187b6bbeccce032a5",
+    "hash": "caf44b2a07d25dcf5d5c0c725be1e670",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -161,73 +161,157 @@
                 "reference": "origin/master"
             },
             "type": "wordpress-plugin",
-            "time": "2014-10-26 07:08:15"
+            "time": "2014-11-24 16:39:55"
         },
         {
-            "name": "simple",
+            "name": "simple/simple-child",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/kiriaze/simple.git",
-                "reference": "origin/master"
+                "url": "https://github.com/kiriaze/simple-child.git",
+                "reference": "d8a29460cda0bf10f58ec61e59dbd2fe43eecbf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiriaze/simple-child/zipball/d8a29460cda0bf10f58ec61e59dbd2fe43eecbf8",
+                "reference": "d8a29460cda0bf10f58ec61e59dbd2fe43eecbf8",
+                "shasum": ""
             },
             "type": "wordpress-theme",
-            "time": "2014-11-23 19:46:51"
+            "authors": [
+                {
+                    "name": "Constantine Kiriaze",
+                    "email": "hello@getsimple.io",
+                    "homepage": "http://getsimple.io"
+                }
+            ],
+            "description": "Simple Child theme description",
+            "homepage": "http://getsimple.io",
+            "support": {
+                "source": "https://github.com/kiriaze/simple-child/tree/master",
+                "issues": "https://github.com/kiriaze/simple-child/issues"
+            },
+            "time": "2014-11-25 04:07:03"
         },
         {
-            "name": "simple-child",
+            "name": "simple/simple-cpt-plugin",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/kiriaze/simple-child.git",
-                "reference": "origin/master"
+                "url": "https://github.com/kiriaze/simple-cpt-plugin.git",
+                "reference": "5a533c51aa757b9a47a789092549053880d47b9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiriaze/simple-cpt-plugin/zipball/5a533c51aa757b9a47a789092549053880d47b9c",
+                "reference": "5a533c51aa757b9a47a789092549053880d47b9c",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Constantine Kiriaze",
+                    "email": "hello@getsimple.io",
+                    "homepage": "http://getsimple.io"
+                }
+            ],
+            "description": "WordPress Plugin description",
+            "homepage": "http://getsimple.io",
+            "support": {
+                "source": "https://github.com/kiriaze/simple-cpt-plugin/tree/master",
+                "issues": "https://github.com/kiriaze/simple-cpt-plugin/issues"
+            },
+            "time": "2014-11-25 03:44:03"
+        },
+        {
+            "name": "simple/simple-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kiriaze/simple-framework.git",
+                "reference": "dc2fc7fe390cc83460493097ea88fca7fe08aae6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiriaze/simple-framework/zipball/dc2fc7fe390cc83460493097ea88fca7fe08aae6",
+                "reference": "dc2fc7fe390cc83460493097ea88fca7fe08aae6",
+                "shasum": ""
             },
             "type": "wordpress-theme",
-            "time": "2014-11-22 00:59:48"
+            "authors": [
+                {
+                    "name": "Constantine Kiriaze",
+                    "email": "hello@getsimple.io",
+                    "homepage": "http://getsimple.io"
+                }
+            ],
+            "description": "Simple Framework description",
+            "homepage": "http://getsimple.io",
+            "support": {
+                "source": "https://github.com/kiriaze/simple-framework/tree/master",
+                "issues": "https://github.com/kiriaze/simple-framework/issues"
+            },
+            "time": "2014-11-25 04:07:16"
         },
         {
-            "name": "simple-cpt-plugin",
+            "name": "simple/simple-multi-cpts",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/kiriaze/simple-cpt-plugin.git",
-                "reference": "origin/master"
+                "url": "https://github.com/kiriaze/simple-multi-cpts.git",
+                "reference": "977332dbfd0fb74188decfa5ba8998442fa43fb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiriaze/simple-multi-cpts/zipball/977332dbfd0fb74188decfa5ba8998442fa43fb1",
+                "reference": "977332dbfd0fb74188decfa5ba8998442fa43fb1",
+                "shasum": ""
             },
             "type": "wordpress-plugin",
-            "time": "2014-10-02 22:16:58"
-        },
-        {
-            "name": "simple-framework",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/kiriaze/simple-framework.git",
-                "reference": "origin/master"
+            "authors": [
+                {
+                    "name": "Constantine Kiriaze",
+                    "email": "hello@getsimple.io",
+                    "homepage": "http://getsimple.io"
+                }
+            ],
+            "description": "WordPress Plugin description",
+            "homepage": "http://getsimple.io",
+            "support": {
+                "source": "https://github.com/kiriaze/simple-multi-cpts/tree/master",
+                "issues": "https://github.com/kiriaze/simple-multi-cpts/issues"
             },
-            "type": "wordpress-theme",
-            "time": "2014-11-07 23:05:24"
+            "time": "2014-11-25 02:54:51"
         },
         {
-            "name": "simple-multi-cpts",
+            "name": "simple/simple-shortcodes",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/kiriaze/simple-multi-cpts.git",
-                "reference": "origin/master"
+                "url": "https://github.com/kiriaze/simple-shortcodes.git",
+                "reference": "71755da2836b6dd9c1057d6a4c84ea1c6e85a5e8"
             },
-            "type": "wordpress-plugin",
-            "time": "2014-11-08 20:31:15"
-        },
-        {
-            "name": "simple-shortcodes",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/kiriaze/simple-shortcodes.git",
-                "reference": "origin/master"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiriaze/simple-shortcodes/zipball/71755da2836b6dd9c1057d6a4c84ea1c6e85a5e8",
+                "reference": "71755da2836b6dd9c1057d6a4c84ea1c6e85a5e8",
+                "shasum": ""
             },
             "type": "wordpress-plugin",
-            "time": "2014-10-02 22:59:00"
+            "authors": [
+                {
+                    "name": "Constantine Kiriaze",
+                    "email": "hello@getsimple.io",
+                    "homepage": "http://getsimple.io"
+                }
+            ],
+            "description": "WordPress Plugin description",
+            "homepage": "http://getsimple.io",
+            "support": {
+                "source": "https://github.com/kiriaze/simple-shortcodes/tree/master",
+                "issues": "https://github.com/kiriaze/simple-shortcodes/issues"
+            },
+            "time": "2014-11-25 03:29:55"
         },
         {
             "name": "wordpress",
@@ -334,7 +418,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/backwpup/",
-            "time": "2014-09-04 09:22:24"
+            "time": "2014-11-18 09:25:41"
         },
         {
             "name": "wpackagist-plugin/bj-lazy-load",
@@ -358,7 +442,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/bj-lazy-load/",
-            "time": "2014-09-29 22:58:50"
+            "time": "2014-10-14 09:37:13"
         },
         {
             "name": "wpackagist-plugin/bulk-content-creator",
@@ -454,7 +538,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/disqus-comment-system/",
-            "time": "2014-06-24 00:43:16"
+            "time": "2014-11-10 23:52:45"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -646,7 +730,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-importer/",
-            "time": "2014-01-14 20:31:13"
+            "time": "2014-10-16 07:46:46"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -670,7 +754,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-seo/",
-            "time": "2014-09-16 12:46:36"
+            "time": "2014-11-18 15:16:42"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
@@ -694,7 +778,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wp-super-cache/",
-            "time": "2014-09-04 15:16:08"
+            "time": "2014-10-10 15:07:07"
         }
     ],
     "packages-dev": [
