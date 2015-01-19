@@ -1,0 +1,140 @@
+/* ------------------------------------------- */
+/* tiny mce custom styles					   */
+/* ------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+body {
+	padding: 10px;
+	width: 770px;
+}
+
+a {
+	color: #1573DD;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 54px;
+	margin-bottom: 32px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 32px;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 40px;
+	margin-bottom: 32px;
+}
+	
+h4 {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 32px;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 32px;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 32px;
+}
+
+ul,
+ol {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+pre {
+	border: 1px solid #e6e6e6;
+	color: #000000;
+	font-family: monospace;
+	font-size: 16px;
+	margin: 20px 0;
+	overflow: auto;
+	padding: 20px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	line-height: 26px;
+}
+
+span.custom_one:before,
+span.custom_one_italic:before {
+	font-size: 13px;
+	font-weight: 400;
+	height: 24px;
+	font-style: italic;
+	color: #999;
+	padding-right: 10px
+}
+
+span.custom_one,
+span.custom_one_italic, {
+	border-bottom: 1px solid #999;
+}
+
+span.custom_one:before {
+	content: 'Fontweight: Custom One';
+}
+
+span.custom_one_italic:before {
+	content: 'Fontweight: Custom One Italic';
+}
+
+span.light, span.light_italic {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+}
+
+span.regular, span.regular_italic {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+}
+
+span.semibold, span.semibold_italic {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 600;
+}
+
+span.bold, span.bold_italic {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+}
+
+span.light_italic, span.regular_italic, span.semibold_italic, span.bold_italic {
+	font-style: italic;
+}

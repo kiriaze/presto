@@ -1,0 +1,34 @@
+// ----------------------------------------------------------------------------------------------------------------
+// footer
+// ----------------------------------------------------------------------------------------------------------------
+
+.to-the-top
+	position: fixed
+	right: 40px
+	bottom: 40px
+	z-index: 2000
+	display: none
+	+respond-to(tablet-portrait)
+		bottom: 16px
+		right: 16px
+	a
+		display: block
+		padding: 10px
+		cursor: pointer
+		svg
+			fill: #b2b2b2
+	a:hover
+		transform: scale(1.15)
+		-ms-transform: scale(1.15)
+		-webkit-transform: scale(1.15)
+
+.overlay
+	display: none
+	width: 100%
+	height: 100%
+	position: absolute
+	background: #000000
+	opacity: 0
+	top: 0
+	z-index: 100
+	cursor: pointer

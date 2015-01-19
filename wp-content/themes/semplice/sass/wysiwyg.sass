@@ -1,0 +1,111 @@
+// ----------------------------------------------------------------------------------------------------------------
+// wysiwyg editor formatting
+// ----------------------------------------------------------------------------------------------------------------
+
+.wysiwyg, .description, .wysiwyg-ce
+	h1:last-child,
+	h2:last-child,
+	h3:last-child,
+	h4:last-child,
+	h5:last-child,
+	h6:last-child,
+		margin: 0px
+	p
+		margin-bottom: $defaultLineHeight
+		word-wrap: break-word
+	p:last-child
+		margin: 0px
+	ul:last-child, ol:last-child
+		margin-bottom: 0px
+	em
+		font-style: italic
+	blockquote
+		margin-bottom: $defaultLineHeight
+		border-left: 3px solid $borderColor
+		padding-left: $defaultLineHeight
+		p
+			color: $darkGray
+	a.more-link
+		padding: 8px 12px
+		color: #acacac
+		border: 1px solid $borderColor
+		+text-size(14px,1,2,3,24px)
+		letter-spacing: 1px
+		text-transform: uppercase
+	a.more-link:hover
+		color: $darkGray
+		border: 1px solid $lightGray
+	img
+		max-width: 100%
+		height: auto
+	.alignleft
+		float: left
+		margin: 8px $defaultLineHeight $defaultLineHeight 0
+	.aligncenter
+		display: block
+		float: none
+		margin-left: auto !important
+		margin-right: auto !important
+	.alignright
+		float: right
+		margin: 8px 0 $defaultLineHeight $defaultLineHeight
+	.wp-caption
+		max-width: 100%
+		text-align: center
+		font-style: italic
+		margin-bottom: $defaultLineHeight !important
+		+text-size(14px,1,2,3,24px)
+	.wp-caption-text
+		opacity: .6
+	video, audio
+		max-width: 100%
+	.mejs-container
+		margin-bottom: $defaultLineHeight
+	pre
+		border: 1px solid $borderColor
+		color: $textColor
+		font-family: "Courier New", monospace !important
+		+text-size(16px,1,2,3,28px)
+		margin: 20px 0
+		overflow: auto
+		padding: 20px
+		white-space: pre-wrap
+		word-wrap: break-word
+		line-height: 26px
+
+	fontsize, lineheight
+		display: inline-block
+	table
+		border-collapse: separate
+		border-color: $borderColor $borderColor $borderColor $borderColor
+		border-image: none
+		border-radius: 4px
+		border-style: solid solid solid none
+		border-width: 1px 1px 1px 0
+		margin-bottom: $defaultLineHeight
+		width: 100%
+		
+		th, td
+			border-left: 1px solid $borderColor
+			border-top: 1px solid $borderColor
+			line-height: 18px
+			padding: 8px
+			text-align: left
+			vertical-align: top
+			
+		thead:first-child tr:first-child th, tbody:first-child tr:first-child th, tbody:first-child tr:first-child td
+			border-top: 0 none
+			
+		thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child
+			border-radius: 4px 0 0
+			
+		thead:first-child tr:first-child th:last-child, tbody:first-child tr:first-child td:last-child
+			border-radius: 0 4px 0 0
+		
+		thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child
+			border-radius: 0 0 0 4px
+
+		thead:last-child tr:last-child th:last-child, tbody:last-child tr:last-child td:last-child
+			border-radius: 0 0 4px
+	table:last-child
+		margin-bottom: 0px

@@ -1,0 +1,118 @@
+// Semplice Theme
+// thumbs.sass
+
+// ----------------------------------------------------------------------------------------------------------------
+// Thumbnails
+// ----------------------------------------------------------------------------------------------------------------
+
+.thumbs-mobile
+	width: 25%
+	height: 500px
+
+section#thumbnails
+	padding-top: 0px !important
+	.fwt
+		overflow: hidden
+		opacity: 0
+		position: relative
+		width: 100%
+		height: 522px
+		background-size: cover
+		border-bottom: 1px solid $borderColor
+		+transition(all, 0.4s, linear)
+		+respond-to(full-width)
+			background-size: auto
+			height: 650px
+		+respond-to(tablet-wide)
+			height: 402px
+		+respond-to(tablet-portrait)
+			height: 324px
+		+respond-to(mobile)
+			height: 180px
+		.fwt-solo-img
+			height: 522px
+			position: relative
+			+respond-to(full-width)
+				height: 650px
+			+respond-to(tablet-wide)
+				height: 402px
+			+respond-to(tablet-portrait)
+				height: 324px
+			+respond-to(mobile)
+				height: 180px
+			img
+				max-width: 100%
+				+respond-to(tablet-portrait)
+					max-width: 100%
+					height: auto
+				+respond-to(mobile)
+					max-width: 100%
+					height: auto
+		.fwt-inner
+			position: absolute
+			+respond-to(tablet-portrait)
+				width: 80%
+			+respond-to(mobile)
+				width: 90%
+		h2
+			padding-top: $defaultLineHeight * 2
+			padding-bottom: $defaultLineHeight * 2
+			margin-bottom: 0px !important
+			color: black
+			+respond-to(tablet-portrait)
+				padding-top: $defaultLineHeight
+				padding-bottom: $defaultLineHeight
+			+respond-to(mobile)
+				padding-top: $defaultLineHeight
+				padding-bottom: $defaultLineHeight
+		span
+			+text-size(18px,1,2,3,32px)
+			color: $lightGray
+			font-weight: normal
+			
+	// normal thumb grid		
+	#thumb-grid
+		//font-size: 0
+		//text-align: center
+		+respond-to(tablet-portrait)
+			width: 80%
+			margin-left: 10%
+			overflow: hidden
+			position: absolute
+			//margin-left: 5% !important
+		+respond-to(mobile)
+			width: 90%
+			margin-left: 5%
+			position: absolute
+			overflow: hidden
+			//margin-left: 5% !important
+	.thumb
+		margin-bottom: 20px
+		margin-left: 0px
+		opacity: 0
+		+transition(all, 0.3s, linear)
+		+respond-to(full-width)
+			margin-bottom: 30px
+		+respond-to(tablet-portrait)
+			margin-bottom: 5%
+			width: 47.5%
+		+respond-to(mobile)
+			margin-bottom: 5%
+			width: 100%
+		img
+			width: 100%
+			height: auto
+		h3
+			color: black
+			+text-size(16px,1,2,3,28px)
+			+line-height(24px,2,4,6)
+			margin-bottom: 0px !important
+			text-align: center
+			margin-top: 10px
+			font-weight: normal
+			span
+				color: $lightGray
+				+text-size(14px,1,2,3,24px)
+				display: block
+	.thumb:hover
+		opacity: .6 !important

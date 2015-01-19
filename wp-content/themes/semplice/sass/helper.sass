@@ -1,0 +1,135 @@
+// ----------------------------------------------------------------------------------------------------------------
+// helper classes
+// ----------------------------------------------------------------------------------------------------------------
+
+.center
+	text-align: center
+	
+.left
+	text-align: left
+	
+.right
+	text-align: right
+	
+.bottom
+	bottom: 0
+	
+.top, .top-fs
+	top: 0
+	
+.middle
+	position: absolute
+	top: 50%
+	
+.post-divider
+	width: 100%
+	height: 1px
+	background: $borderColor
+	margin-top: $defaultLineHeight * 3
+	margin-bottom: $defaultLineHeight * 3
+	+respond-to(tablet-portrait)
+		margin-top: $defaultLineHeight * 2
+		margin-bottom: $defaultLineHeight * 2
+	+respond-to(mobile)
+		margin-top: $defaultLineHeight
+		margin-bottom: $defaultLineHeight
+
+.divider-no-margin
+	margin-top: 0px !important
+	margin-bottom: $defaultLineHeight
+		
+.responsive-video
+	position: relative
+	padding-bottom: 56.25%
+	height: 0
+	overflow: hidden
+	max-width: 100%
+
+.responsive-video iframe,  
+.responsive-video object,  
+.responsive-video embed,
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+// masonry grid and gutter-sizer
+.grid-sizer
+	width: 60px
+	+respond-to(full-width)
+		width: 70px
+	+respond-to(tablet-wide)
+		width: 42px
+	+respond-to(tablet-portrait)
+		width: 47.5%
+		
+.gutter-sizer
+	width: 20px
+	+respond-to(full-width)
+		width: 30px
+	+respond-to(tablet-portrait)
+		width: 5%
+
+.masonry-item
+	margin-left: 0px !important
+	
+.hr-container:before,
+.hr-container:after
+	content: ""
+	display: table
+video
+	height: auto !important
+.scrollbar-measure
+	width: 100px
+	height: 100px
+	overflow: scroll
+	position: absolute
+	top: -9999px
+.post-password-form
+	padding-top: $defaultLineHeight * 2
+	p
+		label
+			font-size: 0px
+			width: 100%
+			input
+				width: 100%
+				height: 50px
+				border: 1px solid $darkBorder
+				padding: 5px
+				text-indent: 10px
+				@include border-box
+				font-size: 16px
+				background: transparent
+		input[type="submit"]
+			width: 200px
+			border: 1px solid $darkBorder
+			background: transparent
+			padding: 10px
+			height: 50px
+			margin-top: 15px
+			font-size: 16px
+			+respond-to(mobile)
+				width: 100%
+	p:last-child
+		line-height: 0px
+				
+#imagelightbox
+	position: fixed
+	z-index: 9999	
+	-ms-touch-action: none
+	touch-action: none
+	background-color: rgba(255,255,255,0.9)
+	cursor: pointer
+	
+.lightbox-overlay
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	z-index: 8000
+	cursor: -webkit-zoom-out
+	cursor: -moz-zoom-out
+a[data-rel="lightbox"]
+	cursor: -webkit-zoom-in
+	cursor: -moz-zoom-in

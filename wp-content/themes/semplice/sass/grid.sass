@@ -1,0 +1,141 @@
+// ----------------------------------------------------------------------------------------------------------------
+// grid width defaults
+// ----------------------------------------------------------------------------------------------------------------
+
+// 1170px grid
+$gridColumns1170:		12 !default
+$gridColumnWidth1170:	70px !default
+$gridGutterWidth1170: 	30px !default
+$gridRowWidth1170:		$gridColumns1170 * $gridColumnWidth1170 + ($gridColumns1170 - 1) * $gridGutterWidth1170 !default
+
+// 940px grid
+$gridColumns940:		12 !default
+$gridColumnWidth940:	60px !default
+$gridGutterWidth940: 	20px !default
+$gridRowWidth940:		$gridColumns940 * $gridColumnWidth940 + ($gridColumns940 - 1) * $gridGutterWidth940 !default
+
+// 724px grid
+$gridColumns724:		12 !default
+$gridColumnWidth724:	42px !default
+$gridGutterWidth724: 	20px !default
+$gridRowWidth724:		$gridColumns724 * $gridColumnWidth724 + ($gridColumns724 - 1) * $gridGutterWidth724 !default
+
+
+// ----------------------------------------------------------------------------------------------------------------
+// breakpoint mixins
+// ----------------------------------------------------------------------------------------------------------------
+
+=respond-to($media)
+	@if $media == full-width
+		@media screen and (min-width: 1200px)
+			@content
+	@if $media == tablet-wide
+		@media (min-width: 768px) and (max-width: 979px)
+			@content
+	@if $media == tablet-portrait
+		@media (max-width: 767px)
+			@content
+	@if $media == mobile
+		@media (max-width: 567px)
+			@content
+			
+// ----------------------------------------------------------------------------------------------------------------
+// container
+// ----------------------------------------------------------------------------------------------------------------
+
+.container
+	width: $gridRowWidth940
+	+respond-to(full-width)
+		width: $gridRowWidth1170
+	+respond-to(tablet-wide)
+		width: $gridRowWidth724
+	+respond-to(tablet-portrait)
+		width: 80%
+		margin-left: 10%
+	+respond-to(mobile)
+		width: 90%
+		margin-left: 5%
+	margin: 0 auto !important
+	
+.masonry-full
+	width: 95%
+	margin-left: 2.5%
+	+respond-to(tablet-portrait)
+		width: 80%
+		margin-left: 10%
+	+respond-to(mobile)
+		width: 90%
+		margin-left: 5%
+.masonry-full-inner
+	margin: 0 auto
+	+respond-to(tablet-portrait)
+		width: 100% !important
+
+// ----------------------------------------------------------------------------------------------------------------
+// row
+// ----------------------------------------------------------------------------------------------------------------
+
+.row
+	*zoom: 1
+	margin-left: -$gridGutterWidth940
+	+respond-to(full-width)
+		margin-left: -$gridGutterWidth1170
+	+respond-to(tablet-wide)
+		margin-left: -$gridGutterWidth724
+	+respond-to(tablet-portrait)
+		margin-left: 0px
+	+respond-to(mobile)
+		margin-left: 0px
+
+.row:after
+	clear: both
+
+.row:before, .row:after
+	content: ""
+	display: table
+	line-height: 0
+
+// ----------------------------------------------------------------------------------------------------------------
+// col span
+// ----------------------------------------------------------------------------------------------------------------
+
+@mixin span($n)	
+	width: $n * $gridColumnWidth940 + ($n - 1) * $gridGutterWidth940
+	margin-left: $gridGutterWidth940
+	+respond-to(full-width)
+		width: $n * $gridColumnWidth1170 + ($n - 1) * $gridGutterWidth1170
+		margin-left: $gridGutterWidth1170
+	+respond-to(tablet-wide)
+		width: $n * $gridColumnWidth724 + ($n - 1) * $gridGutterWidth724
+		margin-left: $gridGutterWidth724
+	+respond-to(tablet-portrait)
+		width: 100%
+		margin-left: 0px
+	+respond-to(mobile)
+		width: 100%
+		margin-left: 0px
+	float: left
+
+@for $i from 1 through 12
+	.span#{$i}
+		+span($i)
+
+// ----------------------------------------------------------------------------------------------------------------
+// offset
+// ----------------------------------------------------------------------------------------------------------------
+
+@mixin offset($n)	
+	margin-left: $n * $gridColumnWidth940 + ($n + 1) * $gridGutterWidth940
+	+respond-to(full-width)
+		margin-left: $n * $gridColumnWidth1170 + ($n + 1) * $gridGutterWidth1170
+	+respond-to(tablet-wide)
+		margin-left: $n * $gridColumnWidth724 + ($n + 1) * $gridGutterWidth724
+	+respond-to(tablet-portrait)
+		margin-left: 0
+	+respond-to(mobile)
+		margin-left: 0
+	float: left
+
+@for $i from 1 through 12
+	.offset#{$i}
+		+offset($i)

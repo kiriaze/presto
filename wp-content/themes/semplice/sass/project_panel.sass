@@ -1,0 +1,114 @@
+// Semplice Theme	
+// project_panel.sass
+
+
+#project-panel-header
+	background: #f9f9f9
+	position: relative
+	z-index: 300
+	display: none
+
+section#project-panel
+	padding-top: 0px !important
+	margin-top: 0px !important
+	background: #f9f9f9
+	.project-panel
+		width: 100%
+		height: 100%
+		z-index: 999
+		.container
+			padding-top: $defaultLineHeight
+			padding-bottom: $defaultLineHeight
+			.project-panel-title
+				+respond-to(tablet-portrait)
+					width: 65%
+					margin-left: 5%
+					float: left
+				+respond-to(mobile)
+					width: 65%
+					margin-left: 5%
+					float: left
+			.project-panel-close
+				text-align: right
+				margin-top: 15px
+				+respond-to(tablet-portrait)
+					width: 25%
+					margin-right: 5%
+					float: right
+				+respond-to(mobile)
+					width: 25%
+					margin-right: 5%
+					float: right
+				div.close-project-panel
+					cursor: pointer
+					display: block
+					svg
+						stroke: black
+				div.close-project-panel:hover
+					opacity: .5
+					
+			.project-panel-thumbs
+				font-size: 0px !important
+				.project-panel-thumb
+					display: inline-block
+					vertical-align: top
+					margin-left: 20px
+					width: 140px
+					height: auto
+					+respond-to(full-width)
+						margin-left: 30px
+						width: 170px
+						height: auto
+					+respond-to(tablet-wide)
+						margin-left: 20px
+						width: 104px !important
+						height: auto !important
+					+respond-to(tablet-portrait)
+						height: auto !important
+						margin-bottom: 5%
+						margin-left: 5% !important
+						width: 26.66666666666667% !important
+					+respond-to(mobile)
+						height: auto !important
+						margin-bottom: 5%
+						margin-left: 5% !important
+						width: 42.5% !important
+					a
+						img
+							+transition(all, 0.25s, linear)
+							width: 140px
+							height: auto
+							+respond-to(full-width)
+								width: 170px !important
+								height: auto !important
+							+respond-to(tablet-wide)
+								width: 104px !important
+								height: auto !important
+							+respond-to(tablet-portrait)
+								height: auto !important
+								width: 100% !important
+							+respond-to(mobile)
+								height: auto !important
+								width: 100% !important
+					h3
+						font-size: 13px !important
+						line-height: 18px
+						color: $textColor
+						text-align: center
+						margin-top: 5px !important
+						span
+							color: $lightGray
+							font-size: 12px
+
+				.project-panel-thumb:hover
+					img
+						opacity: .5 !important
+
+#project-panel-footer
+	opacity: 0
+	section#project-panel
+		.project-panel
+			background: #fafafa
+	.project-panel-close
+		display: none
+	

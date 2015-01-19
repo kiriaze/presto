@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="controls.fw-Page_x25_201" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="144px" height="32px" viewBox="0 0 144 32" enable-background="new 0 0 144 32" xml:space="preserve">
+<path fill="#FFFFFF" d="z"/>
+<g id="BG">
+</g>
+<g id="controls">
+	<path id="Line" fill="#FFFFFF" stroke="#FFFFFF" d="M98.5,7.5h11"/>
+	<path id="Line2" fill="#FFFFFF" stroke="#FFFFFF" d="M98.5,3.5h11"/>
+	<path id="Line3" fill="#FFFFFF" stroke="#FFFFFF" d="M98.5,11.5h11"/>
+	<path id="Ellipse" fill="#FFFFFF" d="M108,11.5c0-0.828,0.448-1.5,1-1.5s1,0.672,1,1.5s-0.448,1.5-1,1.5S108,12.328,108,11.5z"/>
+	<path id="Ellipse2" fill="#FFFFFF" d="M104,7.5c0-0.828,0.448-1.5,1-1.5s1,0.672,1,1.5S105.552,9,105,9S104,8.328,104,7.5z"/>
+	<path id="Ellipse3" fill="#FFFFFF" d="M108,3.5c0-0.828,0.448-1.5,1-1.5s1,0.672,1,1.5S109.552,5,109,5S108,4.328,108,3.5z"/>
+</g>
+<g id="backlight">
+	<g id="off">
+		<rect x="83" y="21" fill="#FFFFFF" stroke="#FFFFFF" width="10" height="6"/>
+	</g>
+	<g id="on">
+		<path id="Ellipse4" fill="#FFFFFF" d="M81,8c0-2.761,3.134-5,7-5s7,2.239,7,5s-3.134,5-7,5S81,10.762,81,8z"/>
+		<rect x="83" y="5" fill="#FFFFFF" stroke="#FFFFFF" width="10" height="6"/>
+	</g>
+</g>
+<g id="loop">
+	<g id="on2">
+		<path fill="#FFFFFF" d="M73.795,4.205C75.215,4.878,76.2,6.323,76.2,8c0,2.32-1.88,4.2-4.2,4.2s-4.2-1.88-4.2-4.2
+			c0-1.677,0.984-3.122,2.405-3.795l-1.33-1.33C67.15,3.929,66,5.831,66,8c0,3.314,2.686,6,6,6s6-2.686,6-6
+			c0-2.169-1.15-4.071-2.875-5.125L73.795,4.205z"/>
+		<path fill="#FFFFFF" d="M71,2h-5l5,5V2z"/>
+	</g>
+	<g id="off2">
+		<path fill="#FFFFFF" d="M73.795,20.205C75.215,20.878,76.2,22.323,76.2,24c0,2.32-1.88,4.2-4.2,4.2s-4.2-1.88-4.2-4.2
+			c0-1.677,0.984-3.122,2.405-3.795l-1.33-1.33C67.15,19.929,66,21.831,66,24c0,3.314,2.686,6,6,6s6-2.686,6-6
+			c0-2.169-1.15-4.071-2.875-5.125L73.795,20.205z"/>
+		<path fill="#FFFFFF" d="M71,18h-5l5,5V18z"/>
+	</g>
+</g>
+<g id="cc">
+	<rect x="49" y="2" display="none" fill="#FFFFFF" stroke="#B0B0B0" width="14" height="12"/>
+	<text transform="matrix(1 0 0 1 49 17)" fill="#FFFFFF" font-family="'ArialMT'" font-size="10">cc</text>
+	<path fill="#FFFFFF" stroke="#FFFFFF" d="M55,7c-4.719-3.219-4.937,5.941,0,3"/>
+	<path fill="#FFFFFF" stroke="#FFFFFF" d="M60,7c-4.719-3.219-4.937,5.941,0,3"/>
+	<path fill="#FFFFFF" d="M50,3h12v10H50V3z M49,2v12h14V2H49z"/>
+	<rect x="49" y="2" fill="#FFFFFF" width="14" height="12"/>
+</g>
+<g id="volume">
+	<g id="no_x25_20sound">
+		<rect x="17" y="5" fill="#FFFFFF" width="5" height="6"/>
+		<path fill="#FFFFFF" d="M21,5l4-3v12l-4-2.938V5z"/>
+	</g>
+	<g id="sound_x25_20bars">
+		<rect x="17" y="21" fill="#FFFFFF" width="5" height="6"/>
+		<path fill="#FFFFFF" d="M21,21l4-3v12l-4-2.938V21z"/>
+		<path fill="none" stroke="#FFFFFF" d="M27,18c0,0,3.063-0.625,3,6s-3,6-3,6"/>
+		<path fill="none" stroke="#FFFFFF" d="M26,21.008c0,0,2.041-0.312,1.999,2.992C27.958,27.304,26,26.992,26,26.992"/>
+	</g>
+</g>
+<g id="play_x2F_pause">
+	<g id="play">
+		<path id="Polygon" fill="#FFFFFF" d="M14,8.5L3,14V3L14,8.5z"/>
+	</g>
+	<g id="pause">
+		<rect x="3" y="18" fill="#FFFFFF" width="3" height="12"/>
+		<rect x="10" y="18" fill="#FFFFFF" width="3" height="12"/>
+	</g>
+</g>
+<g id="fullscreen">
+	<path fill="#FFFFFF" d="M45,3v10H35V3H45 M46,2H34v12h12V2L46,2z"/>
+	<g id="exit">
+		<path fill="#FFFFFF" d="M42,22h4l-4-4V22z"/>
+		<path fill="#FFFFFF" d="M38,22v-4l-4,4H38z"/>
+		<path fill="#FFFFFF" d="M38,26h-4l4,4V26z"/>
+		<path fill="#FFFFFF" d="M42,26v4l4-4H42z"/>
+	</g>
+</g>
+<g id="stop">
+	<rect x="115" y="3" fill="#FFFFFF" width="10" height="10"/>
+</g>
+<g id="chooser">
+	<path fill="#FFFFFF" d="M135.235,6.152c1.02-0.423,2.19,0.062,2.613,1.082c0.423,1.021-0.062,2.19-1.082,2.613
+		c-1.02,0.423-2.19-0.062-2.613-1.082S134.214,6.575,135.235,6.152z M133.273,1.418L136,4.005l2.727-2.588l0.098,3.758l3.758,0.098
+		L139.995,8l2.588,2.726l-3.758,0.098l-0.098,3.758L136,11.995l-2.727,2.588l-0.098-3.758l-3.758-0.098L132.005,8l-2.588-2.727
+		l3.758-0.098L133.273,1.418z"/>
+</g>
+<path fill="#FFFFFF" d="z"/>
+</svg>

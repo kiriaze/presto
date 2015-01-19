@@ -1,0 +1,274 @@
+// ----------------------------------------------------------------------------------------------------------------
+// default formating
+// ----------------------------------------------------------------------------------------------------------------
+
+html, body
+	height: 100%
+
+body
+	width: 100%
+	height: 100%
+	background: #ffffff
+	font-family: $font
+	color: $textColor
+	line-height: $defaultLineHeight
+	word-wrap: break-word
+	+text-size(18px,1,2,3,32px)
+	overflow-y: scroll
+	overflow-x: hidden
+
+.fade-content
+	opacity: 0
+	
+#wrapper
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 1
+
+section
+	padding-top: $defaultLineHeight * 2
+	+respond-to(tablet-portrait)
+		padding-top: $defaultLineHeight
+
+p
+	margin-bottom: $defaultLineHeight
+	// text-align: justify
+	color: $textColor
+	letter-spacing: 0.01rem
+	
+a
+	+transition(all, 0.2s, linear)
+	text-decoration: none
+	color: $linkColor
+
+a:hover
+	color: $hoverColor
+	
+h1, h2, h3, h4, h5, h6
+	color: $headingColor
+		
+h1
+	+text-size(42px,4,9,15,54px)
+	margin-bottom: $defaultLineHeight
+h2
+	+text-size(36px,3,7,12,48px)
+	margin-bottom: $defaultLineHeight
+h3
+	+text-size(28px,2,6,8,40px)
+	margin-bottom: $defaultLineHeight
+h4
+	+text-size(24px,2,4,6,36px)
+	margin-bottom: $defaultLineHeight
+h5
+	+text-size(20px,1,2,4,32px)
+	margin-bottom: $defaultLineHeight
+h6
+	+text-size(18px,1,2,3,32px)
+	margin-bottom: $defaultLineHeight
+
+ol,ul
+	margin-left: 48px
+	margin-bottom: $defaultLineHeight
+
+ul ul, ul ol, ol ol, ol ul
+	margin-left: $defaultLineHeight
+	margin-bottom: 0px
+	
+ol
+	list-style: decimal outside none
+ul
+	list-style: disc outside none
+
+cite, q, em, var
+	font-style: italic
+
+dl
+	margin-bottom: $defaultLineHeight
+	dt
+		font-weight: bold
+	dd
+		margin-left: $defaultLineHeight / 2
+dl:last-child
+	margin-bottom: 0px
+
+address
+	font-style: italic
+	margin-bottom: $defaultLineHeight
+address:last-child
+	margin-bottom: 0px
+
+abbr, acronym
+	cursor: help
+	border-bottom: 1px dotted #000000
+
+code, kbd, pre, tt
+	border: 1px solid $borderColor
+	font-family: "Courier New", monospace !important
+	padding: 5px
+	+text-size(16px,1,2,3,28px)
+
+sub, sup
+	font-size: 75%
+	line-height: 0
+	position: relative
+	vertical-align: baseline
+
+sub
+	bottom: -0.25em
+
+sup
+	top: -0.5em
+	
+// resonsive font sizes
+[data-font-size="11px"], .fs-11px, .h1-fs-11px h1, .h2-fs-11px h2, .h3-fs-11px h3, .h4-fs-11px h4, .h5-fs-11px h5, .h6-fs-11px h6, .fs-11px ul li a
+	+text-size(11px,1,2,3,21px)
+[data-font-size="12px"], .fs-12px, .h1-fs-12px h1, .h2-fs-12px h2, .h3-fs-12px h3, .h4-fs-12px h4, .h5-fs-12px h5, .h6-fs-12px h6, .fs-12px ul li a
+	+text-size(12px,1,2,3,22px)
+[data-font-size="13px"], .fs-13px, .h1-fs-13px h1, .h2-fs-13px h2, .h3-fs-13px h3, .h4-fs-13px h4, .h5-fs-13px h5, .h6-fs-13px h6, .fs-13px ul li a
+	+text-size(13px,1,2,3,23px)
+[data-font-size="14px"], .fs-14px, .h1-fs-14px h1, .h2-fs-14px h2, .h3-fs-14px h3, .h4-fs-14px h4, .h5-fs-14px h5, .h6-fs-14px h6, .fs-14px ul li a
+	+text-size(14px,1,2,3,24px)
+[data-font-size="15px"], .fs-15px, .h1-fs-15px h1, .h2-fs-15px h2, .h3-fs-15px h3, .h4-fs-15px h4, .h5-fs-15px h5, .h6-fs-15px h6, .fs-15px ul li a
+	+text-size(15px,1,2,3,26px)
+[data-font-size="16px"], .fs-16px, .h1-fs-16px h1, .h2-fs-16px h2, .h3-fs-16px h3, .h4-fs-16px h4, .h5-fs-16px h5, .h6-fs-16px h6, .fs-16px ul li a
+	+text-size(16px,1,2,3,28px)
+[data-font-size="17px"], .fs-17px, .h1-fs-17px h1, .h2-fs-17px h2, .h3-fs-17px h3, .h4-fs-17px h4, .h5-fs-17px h5, .h6-fs-17px h6, .fs-17px ul li a
+	+text-size(17px,1,2,3,29px)
+[data-font-size="18px"], .fs-18px, .h1-fs-18px h1, .h2-fs-18px h2, .h3-fs-18px h3, .h4-fs-18px h4, .h5-fs-18px h5, .h6-fs-18px h6, .fs-18px ul li a
+	+text-size(18px,1,2,3,32px)
+[data-font-size="20px"], .fs-20px, .h1-fs-20px h1, .h2-fs-20px h2, .h3-fs-20px h3, .h4-fs-20px h4, .h5-fs-20px h5, .h6-fs-20px h6, .fs-20px ul li a
+	+text-size(20px,1,2,4,32px)
+[data-font-size="22px"], .fs-22px, .h1-fs-22px h1, .h2-fs-22px h2, .h3-fs-22px h3, .h4-fs-22px h4, .h5-fs-22px h5, .h6-fs-22px h6, .fs-22px ul li a
+	+text-size(22px,1,2,5,34px)
+[data-font-size="24px"], .fs-24px, .h1-fs-24px h1, .h2-fs-24px h2, .h3-fs-24px h3, .h4-fs-24px h4, .h5-fs-24px h5, .h6-fs-24px h6, .fs-24px ul li a
+	+text-size(24px,2,4,6,36px)
+[data-font-size="26px"], .fs-26px, .h1-fs-26px h1, .h2-fs-26px h2, .h3-fs-26px h3, .h4-fs-26px h4, .h5-fs-26px h5, .h6-fs-26px h6, .fs-26px ul li a
+	+text-size(26px,2,4,7,38px)
+[data-font-size="28px"], .fs-28px, .h1-fs-28px h1, .h2-fs-28px h2, .h3-fs-28px h3, .h4-fs-28px h4, .h5-fs-28px h5, .h6-fs-28px h6, .fs-28px ul li a
+	+text-size(28px,2,4,8,40px)
+[data-font-size="30px"], .fs-30px, .h1-fs-30px h1, .h2-fs-30px h2, .h3-fs-30px h3, .h4-fs-30px h4, .h5-fs-30px h5, .h6-fs-30px h6, .fs-30px ul li a
+	+text-size(30px,2,4,9,42px)
+[data-font-size="32px"], .fs-32px, .h1-fs-32px h1, .h2-fs-32px h2, .h3-fs-32px h3, .h4-fs-32px h4, .h5-fs-32px h5, .h6-fs-32px h6, .fs-32px ul li a
+	+text-size(32px,2,6,10,44px)
+[data-font-size="34px"], .fs-34px, .h1-fs-34px h1, .h2-fs-34px h2, .h3-fs-34px h3, .h4-fs-34px h4, .h5-fs-34px h5, .h6-fs-34px h6, .fs-34px ul li a
+	+text-size(34px,2,6,11,46px)
+[data-font-size="36px"], .fs-36px, .h1-fs-36px h1, .h2-fs-36px h2, .h3-fs-36px h3, .h4-fs-36px h4, .h5-fs-36px h5, .h6-fs-36px h6, .fs-36px ul li a
+	+text-size(36px,3,7,12,48px)
+[data-font-size="38px"], .fs-38px, .h1-fs-38px h1, .h2-fs-38px h2, .h3-fs-38px h3, .h4-fs-38px h4, .h5-fs-38px h5, .h6-fs-38px h6, .fs-38px ul li a
+	+text-size(38px,3,7,13,50px)
+[data-font-size="40px"], .fs-40px, .h1-fs-40px h1, .h2-fs-40px h2, .h3-fs-40px h3, .h4-fs-40px h4, .h5-fs-40px h5, .h6-fs-40px h6, .fs-40px ul li a
+	+text-size(40px,3,8,14,52px)
+[data-font-size="42px"], .fs-42px, .h1-fs-42px h1, .h2-fs-42px h2, .h3-fs-42px h3, .h4-fs-42px h4, .h5-fs-42px h5, .h6-fs-42px h6, .fs-42px ul li a
+	+text-size(42px,4,9,15,54px)
+[data-font-size="44px"], .fs-44px, .h1-fs-44px h1, .h2-fs-44px h2, .h3-fs-44px h3, .h4-fs-44px h4, .h5-fs-44px h5, .h6-fs-44px h6, .fs-44px ul li a
+	+text-size(44px,4,9,16,56px)
+[data-font-size="46px"], .fs-46px, .h1-fs-46px h1, .h2-fs-46px h2, .h3-fs-46px h3, .h4-fs-46px h4, .h5-fs-46px h5, .h6-fs-46px h6, .fs-46px ul li a
+	+text-size(46px,4,9,17,58px)
+[data-font-size="48px"], .fs-48px, .h1-fs-48px h1, .h2-fs-48px h2, .h3-fs-48px h3, .h4-fs-48px h4, .h5-fs-48px h5, .h6-fs-48px h6, .fs-48px ul li a
+	+text-size(48px,4,10,18,60px)
+[data-font-size="50px"], .fs-50px, .h1-fs-50px h1, .h2-fs-50px h2, .h3-fs-50px h3, .h4-fs-50px h4, .h5-fs-50px h5, .h6-fs-50px h6, .fs-50px ul li a
+	+text-size(50px,4,10,19,62px)
+[data-font-size="52px"], .fs-52px, .h1-fs-52px h1, .h2-fs-52px h2, .h3-fs-52px h3, .h4-fs-52px h4, .h5-fs-52px h5, .h6-fs-52px h6, .fs-52px ul li a
+	+text-size(52px,4,11,19,64px)
+[data-font-size="54px"], .fs-54px, .h1-fs-54px h1, .h2-fs-54px h2, .h3-fs-54px h3, .h4-fs-54px h4, .h5-fs-54px h5, .h6-fs-54px h6, .fs-54px ul li a
+	+text-size(54px,4,12,20,66px)
+[data-font-size="56px"], .fs-56px, .h1-fs-56px h1, .h2-fs-56px h2, .h3-fs-56px h3, .h4-fs-56px h4, .h5-fs-56px h5, .h6-fs-56px h6, .fs-56px ul li a
+	+text-size(56px,4,12,21,68px)
+[data-font-size="58px"], .fs-58px, .h1-fs-58px h1, .h2-fs-58px h2, .h3-fs-58px h3, .h4-fs-58px h4, .h5-fs-58px h5, .h6-fs-58px h6, .fs-58px ul li a
+	+text-size(58px,4,13,21,70px)
+[data-font-size="60px"], .fs-60px, .h1-fs-60px h1, .h2-fs-60px h2, .h3-fs-60px h3, .h4-fs-60px h4, .h5-fs-60px h5, .h6-fs-60px h6, .fs-68px ul li a
+	+text-size(60px,4,14,22,72px)
+[data-font-size="72px"], .fs-72px, .h1-fs-72px h1, .h2-fs-72px h2, .h3-fs-72px h3, .h4-fs-72px h4, .h5-fs-72px h5, .h6-fs-72px h6, .fs-72px ul li a
+	+text-size(72px,6,18,26,84px)
+[data-font-size="84px"], .fs-84px, .h1-fs-84px h1, .h2-fs-84px h2, .h3-fs-84px h3, .h4-fs-84px h4, .h5-fs-84px h5, .h6-fs-84px h6, .fs-84px ul li a
+	+text-size(84px,8,22,30,96px)
+[data-font-size="96px"], .fs-96px, .h1-fs-96px h1, .h2-fs-96px h2, .h3-fs-96px h3, .h4-fs-96px h4, .h5-fs-96px h5, .h6-fs-96px h6, .fs-96px ul li a
+	+text-size(96px,10,26,34,108px)
+
+// resonsive line-heights
+[data-line-height="12px"]
+	+line-height(12px,1,2,3)
+[data-line-height="13px"]
+	+line-height(13px,1,2,3)
+[data-line-height="14px"]
+	+line-height(14px,1,2,3)
+[data-line-height="15px"]
+	+line-height(15px,1,2,3)
+[data-line-height="16px"]
+	+line-height(16px,1,2,3)
+[data-line-height="17px"]
+	+line-height(17px,1,2,3)
+[data-line-height="18px"]
+	+line-height(18px,1,2,3)
+[data-line-height="20px"]
+	+line-height(20px,1,2,4)
+[data-line-height="22px"]
+	+line-height(22px,1,2,5)
+[data-line-height="24px"]
+	+line-height(24px,2,4,6)
+[data-line-height="26px"]
+	+line-height(24px,2,4,7)
+[data-line-height="28px"]
+	+line-height(28px,2,4,8)
+[data-line-height="30px"]
+	+line-height(28px,2,4,9)
+[data-line-height="32px"]
+	+line-height(32px,2,6,10)
+[data-line-height="34px"]
+	+line-height(34px,2,6,11)
+[data-line-height="36px"]
+	+line-height(36px,3,7,12)
+[data-line-height="38px"]
+	+line-height(38px,3,7,13)
+[data-line-height="40px"]
+	+line-height(38px,3,8,14)
+[data-line-height="42px"]
+	+line-height(42px,4,9,15)
+[data-line-height="44px"]
+	+line-height(44px,4,9,16)
+[data-line-height="46px"]
+	+line-height(46px,4,9,17)
+[data-line-height="48px"]
+	+line-height(48px,4,10,18)
+[data-line-height="50px"]
+	+line-height(50px,4,10,19)
+[data-line-height="52px"]
+	+line-height(52px,4,11,19)
+[data-line-height="54px"]
+	+line-height(54px,4,12,20)
+[data-line-height="56px"]
+	+line-height(56px,4,12,21)
+[data-line-height="58px"]
+	+line-height(58px,4,13,21)
+[data-line-height="60px"]
+	+line-height(60px,4,14,22)
+[data-line-height="72px"]
+	+line-height(72px,6,18,26)
+[data-line-height="84px"]
+	+line-height(84px,8,22,30)
+[data-line-height="96px"]
+	+line-height(96px,10,26,34)
+[data-line-height="108px"]
+	+line-height(108px,10,26,34)
+	
+#nprogress
+	pointer-events: none
+	
+#nprogress .bar
+	background-color: #1573DD
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	width: 100%
+	height: 5px
+
+.mejs-container
+	display: block !important
+	
+.mejs-controls .mejs-time-rail .mejs-time-current
+	background: white !important
+	
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+	background: #c0c0c0 !important

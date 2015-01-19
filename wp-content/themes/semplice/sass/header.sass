@@ -1,0 +1,351 @@
+// ----------------------------------------------------------------------------------------------------------------
+// header
+// ----------------------------------------------------------------------------------------------------------------
+
+header
+	left: 0
+	right: 0
+	position: fixed
+	min-height: 50px
+	+respond-to(tablet-portrait)
+		top: 0px !important
+		position: absolute
+	z-index: 20
+	opacity: 0
+	
+// header bar
+#navbar-bg
+	background: #f9f9f9
+	width: 100%
+	position: absolute
+	+transition(all, 0.4s, linear)
+#navbar
+	+transition(all, 0.4s, linear)
+	position: relative
+	.navbar-inner
+		position: relative
+	.nav-wrapper
+		position: absolute
+		right: 0
+		top: 0
+		+respond-to(tablet-portrait)
+			width: 100%
+	.fluid-container
+		position: absolute
+		left: 40px
+		right: 40px
+		+respond-to(tablet-portrait)
+			width: 80%
+			margin-left: 10%
+			left: 0 !important
+			right: 0 !important
+		+respond-to(mobile)
+			width: 90%
+			margin-left: 5%
+	.logo
+		display: inline-block
+		h1
+			font-size: 24px !important
+			margin-bottom: 0
+			letter-spacing: -1px
+		a.has-logo
+			display: inline-block
+			font-size: 0
+		a
+			color: black
+		a:hover
+			opacity: .4
+		svg
+			+transition(all, 0.4s, linear)
+	// logo paddings
+	.twenty, .fluid-twenty
+		#logo
+			padding-top: 20px
+	.fourty, .fluid-fourty
+		#logo
+			padding-top: 40px
+	.fluid-logo
+		float: left
+		position: relative
+		z-index: 1
+		+respond-to(tablet-portrait)
+			padding: 0px
+	.controls
+		float: left
+		+respond-to(tablet-portrait)
+			position: absolute
+			right: 0
+			top: 0
+			padding: 0px
+			margin: 0px
+		a
+			right: 0
+			float: right
+			line-height: 0
+			font-size: 0
+			cursor: pointer
+			padding: 0px 10px
+			//background: green
+			span
+				display: block
+		a.project-panel-button
+			+respond-to(tablet-wide)
+				margin: 0px !important
+			+respond-to(tablet-portrait)
+				margin: 0px !important
+		a:first-child
+			margin-right: -10px
+		a:last-child
+			padding-left: 40px
+		.responsive-first
+			margin-right: -10px
+		a:hover, .project-panel-button:hover
+			opacity: .4 !important
+		.ios-no-hover
+			opacity: 1 !important
+		a.standard
+			+respond-to(tablet-portrait)
+				display: none
+		a.responsive
+			display: none
+			+respond-to(tablet-portrait)
+				display: block
+		a.thumb-nav
+			width: 15px
+			margin-right: 0px				
+		span.close
+			display: none
+			fill: black
+		//a:hover span
+			//opacity: .5
+		svg
+			+transition(all, 0.4s, linear)
+			height: 24px
+		.menu-responsive
+			display: none
+			+respond-to(tablet-wide)
+				display: block
+			+respond-to(tablet-portrait)
+				display: block
+	.fluid-menu
+		position: absolute
+		+respond-to(tablet-portrait)
+			width: 100%
+		right: 0
+	.fluid-nav-center
+		width: 100%
+		nav.standard
+			text-align: center
+			float: none
+		div.controls
+			right: 0
+			position: absolute
+			top: 0
+
+// fullscreen menu
+#fullscreen-menu
+	width: 100%
+	position: absolute
+	top: 70px
+	left: 0px
+	//opacity: 0
+	background: #ffffff
+	position: fixed
+	+respond-to(tablet-portrait)
+		position: absolute
+	max-height: 100%
+	display: none
+	z-index: 101
+	.menu-inner
+		nav
+			font-size: 22px
+			ul
+				display: inline-block
+				margin-left: 0px
+				margin-bottom: 0px !important
+				width: 100%
+				border-left: none !important
+				li		
+					text-align: center
+					list-style: none !important
+					a
+						cursor: pointer
+						padding: 24px 0px
+						color: #aaaaaa
+						letter-spacing: 1px
+						display: block
+						border-bottom: 1px solid #e6e6e6
+						+respond-to(tablet-wide)
+							padding: 15px 0px
+							font-size: 22px
+						+respond-to(tablet-portrait)
+							padding: 10px 0px
+							font-size: 20px
+					a:hover
+						background: #fdfdfd
+						color: #000000
+				li.current-menu-item
+					a
+						color: #000000
+				
+		.follow-links
+			ul
+				width: 100%
+				margin: 0px !important
+				display: inline-block
+				text-align: center
+				font-size: 0
+				li
+					display: inline-block
+					a
+						cursor: pointer
+						padding: 15px
+						display: block
+						font-size: 0
+						fill: #aaaaaa
+						+respond-to(tablet-portrait)
+							padding: 10px 5px
+						svg
+							height: 20px
+							width: 28px
+							+respond-to(tablet-wide)
+								height: 18px
+							+respond-to(tablet-portrait)
+								height: 16px
+							margin-top: 19px
+							+transition(all, 0.3s, linear)
+					a:hover
+						fill: #000000
+.is-work
+	#fullscreen-menu
+		li.current-menu-item, li.portfolio-grid
+			a
+				color: #000000
+
+// standard menu
+nav.standard
+	float: left
+	font-size: 0
+	+respond-to(tablet-wide)
+		display: none
+	+respond-to(tablet-portrait)
+		display: none
+	ul
+		li
+			display: inline-block
+			a
+				display: block
+				font-size: 16px
+				color: $darkGray !important
+				padding: 0px 25px 0px 25px
+			a:hover
+				color: black !important
+		li.current-menu-item
+			a
+				color: black
+		li:last-child
+			a
+				//padding-right: 0px !important
+				
+// featured header
+.fullscreen-cover
+	width: 100%
+	height: 100%
+	background-color: white
+	overflow: hidden
+	opacity: 0
+	position: relative
+	.cover-image, .cover-video-responsive
+		text-align: center
+		width: 100%
+		bottom: 0
+		line-height: 0
+		overflow: hidden
+		height: 100%
+		background-repeat: no-repeat
+		background-attachment: fixed
+		transform: scale(1)
+		
+	.cover-video-responsive
+		background-size: cover
+	.cover-video
+		position: absolute
+		top: 0
+		overflow: hidden
+		background: transparent
+		font-size: 0
+		line-height: 0
+		display: none
+			
+	.cover-video-responsive
+		display: block
+		+respond-to(full-width)
+			display: none
+	a
+		.title
+			h1:hover
+				opacity: .5
+	.cover-headline
+		opacity: 0
+		position: absolute
+		margin-bottom: $defaultLineHeight * 3
+		z-index: 1
+		+transition(all, 0s, linear)
+		+respond-to(tablet-wide)
+			margin-bottom: $defaultLineHeight * 2
+		+respond-to(tablet-portrait)
+			margin-bottom: $defaultLineHeight * 2
+			width: 80%
+		+respond-to(mobile)
+			margin-bottom: $defaultLineHeight
+			width: 90%
+		h1
+			+transition(all, 0.3s, linear)
+			margin-bottom: 0px !important
+		.headline-image
+			max-width: 100%
+				
+	.format-image
+		.middle
+			margin-bottom: 0px
+			margin-top: 0px
+	.top, .top-fs, .title-top
+		display: block
+		margin-top: $defaultLineHeight * 3
+		+respond-to(tablet-wide)
+			margin-top: $defaultLineHeight * 2
+		+respond-to(tablet-portrait)
+			margin-top: $defaultLineHeight * 2
+		+respond-to(mobile)
+			margin-top: $defaultLineHeight
+	.meta-foot
+		position: absolute
+		bottom: 20px
+		z-index: 10
+		color: white
+	.see-more
+		cursor: pointer
+		height: 20px
+		position: absolute
+		bottom: $defaultLineHeight
+		width: 100%
+		+respond-to(tablet-portrait)
+			bottom: 16px !important
+		.icon
+			+transition(all, 0.2s, linear)
+			width: 100%
+			position: absolute
+			text-align: center
+
+.empty-portfolio
+	padding: $defaultLineHeight * 2 0
+
+#intro-text
+	padding: $defaultLineHeight * 2 0
+	p:last-child
+		margin-bottom: 0px !important
+
+.pd-home
+	margin-bottom: 0px !important
+	
+	

@@ -1,0 +1,58 @@
+// ----------------------------------------------------------------------------------------------------------------
+// wysiwyg editor formatting
+// ----------------------------------------------------------------------------------------------------------------
+
+.wysiwyg, .wysiwyg-ce, .description, .cke_wysiwyg_div
+	h1:last-child,
+	h2:last-child,
+	h3:last-child,
+	h4:last-child,
+	h5:last-child,
+	h6:last-child,
+		margin: 0px
+	p, ul, li
+		+text-size(18px,1,2,3,32px)
+		color: $textColor
+		line-height: $defaultLineHeight
+		margin-bottom: $defaultLineHeight
+		margin-top: 0px !important
+		word-wrap: break-word
+	p:last-child
+		margin: 0px
+	ol
+		list-style: decimal inside none
+	ul
+		list-style: disc inside none
+		
+	ol, ul
+		margin-left: $defaultLineHeight !important
+		li
+			margin-bottom: 0px !important
+	span
+		//display: inline-block
+	em
+		font-style: italic
+	blockquote
+		margin-bottom: $defaultLineHeight
+		border-left: 3px solid $borderColor
+		padding-left: $defaultLineHeight
+		p
+			color: $darkGray
+	img
+		max-width: 100%
+		height: auto
+	video, audio
+		max-width: 100%
+	.mejs-container
+		margin-bottom: $defaultLineHeight
+	pre
+		border: 1px solid $borderColor
+		color: $textColor
+		font-family: monospace
+		+text-size(16px,1,2,3,28px)
+		margin: 20px 0
+		overflow: auto
+		padding: 20px
+		white-space: pre-wrap
+		word-wrap: break-word
+		line-height: 26px

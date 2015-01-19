@@ -1,0 +1,102 @@
+// ----------------------------------------------------------------------------------------------------------------
+// variables, mixins, functions
+// ----------------------------------------------------------------------------------------------------------------
+
+$font: 										'Open Sans', Arial, sans-serif !default
+$textColor: 							#333333 !default
+$headingColor: 						#000000 !default
+$linkColor:								#1573dd !default
+$hoverColor: 							#000000 !default
+$lightGray:    						#aaaaaa !default
+$darkGray: 								#888888 !default
+$borderColor: 						#e6e6e6 !default
+$darkBorder:							#dddddd !default
+$defaultFontSize:					18px !default
+$defaultLineHeight: 			32px !default
+
+// ----------------------------------------------------------------------------------------------------------------
+// mixins
+// ----------------------------------------------------------------------------------------------------------------
+
+@mixin transition($type, $duration, $easing)
+	transition: $type $duration $easing
+	-moz-transition: $type $duration $easing
+	-webkit-transition: $type $duration $easing
+	-o-transition: $type $duration $easing
+
+@mixin easeOutCubic($type, $duration)
+	transition: $type $duration cubic-bezier(0.215, 0.610, 0.355, 1.000)
+	-moz-transition: $type $duration cubic-bezier(0.215, 0.610, 0.355, 1.000)
+	-webkit-transition: $type $duration cubic-bezier(0.215, 0.610, 0.355, 1.000)
+	-o-transition: $type $duration cubic-bezier(0.215, 0.610, 0.355, 1.000)
+	
+@mixin easeOutQuint($type, $duration)
+	transition: $type $duration cubic-bezier(0.230, 1.000, 0.320, 1.000)
+	-moz-transition: $type $duration cubic-bezier(0.230, 1.000, 0.320, 1.000)
+	-webkit-transition: $type $duration cubic-bezier(0.230, 1.000, 0.320, 1.000)
+	-o-transition: $type $duration cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+@mixin border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
+	
+@mixin placeholder($color)
+	input::-webkit-input-placeholder
+		color: $color !important
+		opacity: 1
+	input::-moz-placeholder
+		color: $color !important
+		opacity: 1
+	input:-ms-input-placeholder
+		color: $color !important
+		opacity: 1
+	textarea::-webkit-input-placeholder
+		color: $color !important
+		opacity: 1
+	textarea::-moz-placeholder
+		color: $color !important
+		opacity: 1
+	textarea:-ms-input-placeholder
+		color: $color !important
+		opacity: 1
+		
+@mixin border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+@mixin transform($transforms)
+	-moz-transform: $transforms
+	-o-transform: $transforms
+	-ms-transform: $transforms
+	-webkit-transform: $transforms
+	transform: $transforms
+
+@mixin scale($scale)
+	@include transform(scale($scale))
+
+@mixin scaleY($scale)
+	@include transform(scaleY($scale))
+	 
+@mixin text-size($size, $standard, $tablet, $mobile, $line-height)
+	font-size: $size - $standard
+	line-height: $line-height - $standard
+	+respond-to(full-width)
+		font-size: $size
+		line-height: $line-height
+	+respond-to(tablet-portrait)
+		font-size: $size - $tablet
+		line-height: $line-height - $tablet
+	+respond-to(mobile)
+		font-size: $size - $mobile
+		line-height: $line-height - $mobile
+	
+@mixin line-height($line-height, $standard, $tablet, $mobile)
+	line-height: $line-height - $standard
+	+respond-to(full-width)
+		line-height: $line-height
+	+respond-to(tablet-portrait)
+		line-height: $line-height - $tablet
+	+respond-to(mobile)
+		line-height: $line-height - $mobile

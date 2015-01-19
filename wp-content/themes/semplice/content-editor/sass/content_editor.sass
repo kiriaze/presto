@@ -1,0 +1,71 @@
+// ----------------------------------------------------------------------------------------------------------------
+// workview
+// ----------------------------------------------------------------------------------------------------------------
+
+#content-wrapper
+	position: relative
+	opacity: 0
+.no-padding
+	padding-bottom: 0px !important
+.content-container, .mc-content-container, .mc-sub-content-container
+	video, audio
+		max-width: 100%
+	.image, .video, .audio, .column-image, .full
+		line-height: 0
+		font-size: 0
+		img
+			height: auto
+			//dont display the negative margin on smaller resolutions
+			@media (min-width: 978px) and (max-width: 1199px)
+				margin: 0 !important
+				max-width: 100%
+			+respond-to(full-width)
+				width: auto
+			+respond-to(tablet-wide)
+				max-width: 100%
+				margin: 0 !important
+			+respond-to(tablet-portrait)
+				width: 100%
+				margin: 0 !important
+			+respond-to(mobile)
+				width: 100%
+				margin: 0 !important
+	.no-scaling, .yes
+		img
+			width: auto !important	
+	.column-image
+		img
+			max-width: 100% !important
+	.full, .column-img-full
+		img
+			width: 100%
+			height: auto
+	.gallery-preview
+		img
+			width: 100%
+			height: auto
+.hr-full-width
+	width: 100%
+.image-link
+	img
+		+transition(all, 0.2s, linear)
+	img:hover
+		opacity: .6
+.ce-button
+	margin: 0px !important
+	border-style: solid !important
+	cursor: pointer
+	text-decoration: none !important
+	display: inline-block
+	text-align: center
+	+transition(all, 0.4s, ease)
+.grid-item
+	margin-bottom: 20px
+	margin-left: 0px
+	opacity: 0
+	font-size: 0
+	line-height: 0
+	+transition(opacity, 0.45s, ease-in-out)
+	img
+		width: 100%
+		height: auto
