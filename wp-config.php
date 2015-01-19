@@ -74,12 +74,7 @@ define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
 // =============================================
 // Set simple-child as Default theme
 // =============================================
-$themes = scandir(WP_CONTENT_DIR . '/themes', 1);
-foreach ($themes as $theme) {
-    if ( $theme == 'simple-child' ) {
-        $default_theme = ucfirst($theme);
-    }
-}
+$default_theme = scandir(WP_CONTENT_DIR . '/themes', 1)[0];
 define('WP_DEFAULT_THEME', $default_theme);
 
 

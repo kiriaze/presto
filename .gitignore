@@ -3,26 +3,41 @@
 #############################
 .DS_Store
 .DS_Store?
+*.log
+sitemap.xml
+sitemap.xml.gz
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
 .htaccess
+composer.lock
+config.codekit
 
 
-########################################
+############################
 # Ignore unwanted WP files #
-########################################
-# core - using /* to be able to exclude
+############################
+# core
 wp
 
 # wp-content
 wp-content/*.php
 wp-content/languages
-wp-content/plugins/*
 wp-content/upgrade
 wp-content/uploads
+
+# Ignore everything in the "plugins" directory, except the plugins you
+# specify (see the commented-out examples for hints on how to do this.)
+wp-content/plugins/*
+#!wp-content/plugins/advanced-custom-fields-pro/
+
+# cache
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/backups/
 
 # wp-content/themes - everything but child
 wp-content/themes/*.php

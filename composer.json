@@ -20,7 +20,6 @@
 
         "wordpress"                                    : "*",
         "wpackagist-plugin/backwpup"                   : "*",
-        "advanced-custom-fields-pro"                   : "*",
         "wpackagist-plugin/limit-login-attempts"       : "*",
 
         "wpackagist-plugin/all-in-one-wp-security-and-firewall" : "*",
@@ -82,36 +81,10 @@
             "package": {
                 "type": "webroot",
                 "name": "wordpress",
-                "version": "4.0",
+                "version": "4.1",
                 "dist": {
-                    "url": "https://github.com/WordPress/WordPress/archive/4.0.1.zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.1.zip",
                     "type": "zip"
-                }
-            }
-        },
-        {
-            "type"                              : "package",
-            "package": {
-                "name": "advanced-custom-fields-pro",
-                "version": "master",
-                "type": "wordpress-plugin",
-                "source": {
-                    "url": "git@bitbucket.org:madebygrizzly/acf-pro.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        },
-        {
-            "type"                              : "package",
-            "package": {
-                "name": "github-updater",
-                "type": "wordpress-plugin",
-                "version": "dev-master",
-                "source": {
-                    "url": "git://github.com/afragen/github-updater.git",
-                    "type": "git",
-                    "reference": "origin/master"
                 }
             }
         },

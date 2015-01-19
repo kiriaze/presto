@@ -157,12 +157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kiriaze/simple-child.git",
-                "reference": "a2ae1fc7f9a2d2313c7f9e274d2f5150e0786b0f"
+                "reference": "673a898e52aa8c0d5a01ae2a882847105113ed32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kiriaze/simple-child/zipball/a2ae1fc7f9a2d2313c7f9e274d2f5150e0786b0f",
-                "reference": "a2ae1fc7f9a2d2313c7f9e274d2f5150e0786b0f",
+                "url": "https://api.github.com/repos/kiriaze/simple-child/zipball/673a898e52aa8c0d5a01ae2a882847105113ed32",
+                "reference": "673a898e52aa8c0d5a01ae2a882847105113ed32",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -179,7 +179,7 @@
                 "source": "https://github.com/kiriaze/simple-child/tree/master",
                 "issues": "https://github.com/kiriaze/simple-child/issues"
             },
-            "time": "2014-12-03 11:33:31"
+            "time": "2014-12-03 23:52:29"
         },
         {
             "name": "simple/simple-cpt-plugin",
@@ -217,12 +217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kiriaze/simple-framework.git",
-                "reference": "021ee6b701a0ca94432a4d098e570455f2be0b24"
+                "reference": "252487632c53cb56e6030495c847f027bcf331af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kiriaze/simple-framework/zipball/021ee6b701a0ca94432a4d098e570455f2be0b24",
-                "reference": "021ee6b701a0ca94432a4d098e570455f2be0b24",
+                "url": "https://api.github.com/repos/kiriaze/simple-framework/zipball/252487632c53cb56e6030495c847f027bcf331af",
+                "reference": "252487632c53cb56e6030495c847f027bcf331af",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -239,7 +239,7 @@
                 "source": "https://github.com/kiriaze/simple-framework/tree/master",
                 "issues": "https://github.com/kiriaze/simple-framework/issues"
             },
-            "time": "2014-12-03 12:16:19"
+            "time": "2014-12-03 23:52:12"
         },
         {
             "name": "simple/simple-multi-cpts",
@@ -247,12 +247,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kiriaze/simple-multi-cpts.git",
-                "reference": "2260f4835adef20434386d9759fc2d48e183b439"
+                "reference": "53beb69cce47a46c0184066cffc7566c41588321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kiriaze/simple-multi-cpts/zipball/2260f4835adef20434386d9759fc2d48e183b439",
-                "reference": "2260f4835adef20434386d9759fc2d48e183b439",
+                "url": "https://api.github.com/repos/kiriaze/simple-multi-cpts/zipball/53beb69cce47a46c0184066cffc7566c41588321",
+                "reference": "53beb69cce47a46c0184066cffc7566c41588321",
                 "shasum": ""
             },
             "type": "wordpress-plugin",
@@ -269,7 +269,7 @@
                 "source": "https://github.com/kiriaze/simple-multi-cpts/tree/master",
                 "issues": "https://github.com/kiriaze/simple-multi-cpts/issues"
             },
-            "time": "2014-12-03 03:33:56"
+            "time": "2014-12-03 20:27:10"
         },
         {
             "name": "simple/simple-shortcodes",
