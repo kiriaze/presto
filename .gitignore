@@ -33,17 +33,15 @@ wp-content/uploads
 wp-content/plugins/*
 #!wp-content/plugins/advanced-custom-fields-pro/
 
+# wp-content/themes - everything but main theme and fallback
+wp-content/themes/*
+!wp-content/themes/twentyfifteen/
+
 # cache
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/
 wp-content/backups/
-
-# wp-content/themes - everything but child
-wp-content/themes/*.php
-wp-content/themes/simple
-wp-content/themes/simple-child
-wp-content/themes/simple-framework
 
 # composer vendor
 wp-content/vendor
