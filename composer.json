@@ -48,7 +48,7 @@
         "wpackagist-plugin/author-recommended-posts"            : "*",
         "wpackagist-plugin/theme-my-login"                      : "*",
         "wpackagist-plugin/manual-image-crop"                   : "*",
-        "wpackagist-plugin/safe-redirect-manager"               : "*".
+        "wpackagist-plugin/safe-redirect-manager"               : "*",
 
         "wpackagist-plugin/password-protected"                  : "*",
         "wpackagist-plugin/oembed-in-comments"                  : "*",
