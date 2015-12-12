@@ -36,6 +36,7 @@ wp-content/plugins/*
 # wp-content/themes - everything but main theme and fallback
 wp-content/themes/*
 !wp-content/themes/twentyfifteen/
+!wp-content/themes/twentysixteen/
 
 # cache
 wp-content/advanced-cache.php
