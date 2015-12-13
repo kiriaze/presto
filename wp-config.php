@@ -20,7 +20,7 @@ $hostname = $_SERVER['HTTP_HOST']; // ex. localhost, site.dev, localhost/site et
 
 switch ($hostname) {
 
-    case 'local.dev':
+    case 'wp.dev':
         define('DB_NAME', 'local_db');
         define('DB_USER', 'root');
         define('DB_PASSWORD', '');
