@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
 
     "require"     : {
-        "composer/installers"                                   : "^1.4",
+        "fancyguy/webroot-installer"                            : "1.0.0",
         "vlucas/phpdotenv"                                      : "~2.2.0",
 
         "wordpress"                                             : "*",
@@ -50,7 +50,8 @@
             "app/content/plugins/{$name}/": ["type:wordpress-plugin"],
             "app/content/themes/{$name}/": ["type:wordpress-theme"]
         },
-        "wordpress-install-dir": "app/wordpress"
+        "webroot-dir": "app/wordpress",
+        "webroot-package": "wordpress"
     },
 
     "config": {
