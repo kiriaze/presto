@@ -1,8 +1,9 @@
 [PressPlay Readme](https://gist.github.com/kiriaze/9fc0d101651326dac67c)
 
 ## Installation
-	1. `composer install`
-	2. `php -S localhost:8000 -t app/`
+1. `composer install`
+2. Either copy or rename .env.example and update variables.
+3. `php -S localhost:8000 -t app/`
 
 ### Other recommended plugins not included within the barebones composer.json
 
