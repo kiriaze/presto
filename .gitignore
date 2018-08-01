@@ -1,48 +1,76 @@
-#############################
-# Ignore OS generated files #
-#############################
-.DS_Store
-.DS_Store?
-*.log
-sitemap.xml
-sitemap.xml.gz
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-.htaccess
-composer.lock
-config.codekit
-
+# Commodities
+vendor/*
+!vendor/.gitkeep
 
 ############################
 # Ignore unwanted WP files #
 ############################
-# core
-wp
 
-# wp-content
-wp-content/*.php
-wp-content/languages
-wp-content/upgrade
-wp-content/uploads
+app/wordpress
+app/.htaccess
+app/content/upgrade
+app/content/uploads/*
+!app/content/uploads/.gitkeep
 
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
-wp-content/plugins/*
-#!wp-content/plugins/advanced-custom-fields-pro/
+app/content/plugins/*
+!app/content/plugins/.gitkeep
+app/content/mu-plugins/*
+!app/content/mu-plugins/.gitkeep
+# remember to exlude custom plugins from being ignored 
+# example: !app/plugins/plugintobepreserved
 
-# wp-content/themes - everything but main theme and fallback
-wp-content/themes/*
-!wp-content/themes/twentyfifteen/
-!wp-content/themes/twentysixteen/
+# app/content/themes - everything but main theme and fallback
+app/content/themes/*
+!app/content/themes/twentyfifteen/
+!app/content/themes/twentysixteen/
 
 # cache
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-wp-content/cache/
-wp-content/backups/
+app/content/advanced-cache.php
+app/content/wp-cache-config.php
+app/content/cache/
+app/content/backups/
 
 # composer vendor
-wp-content/vendor
+app/content/vendor
+
+# Keep separate .env files for each copy of this project
+.env
+
+# SQLITE DB
+database
+!database/.gitkeep
+
+# Debug log
+app/content/debug.log
+
+# Composer lock file
+composer.lock
+
+#############################
+# Ignore OS generated files #
+#############################
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

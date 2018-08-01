@@ -1,107 +1,75 @@
 {
     "name"        : "kiriaze/PressPlay",
-
     "description" : "Composer backed boilerplate project for easy WordPress sites",
-
     "authors"     : [
         {
-            "name"                              : "Constantine Kiriaze",
-            "email"                             : "hello@kiriaze.com",
-            "homepage"                          : "http://kiriaze.com/"
+            "name"     : "Constantine Kiriaze",
+            "email"    : "hello@kiriaze.com",
+            "homepage" : "http://kiriaze.com/"
         }
     ],
-
-    "type"        : "project",
-
+    "license": "MIT",
+    "type": "project",
     "minimum-stability": "dev",
 
     "require"     : {
-        "fancyguy/webroot-installer"                            : "1.0.0",
+        "composer/installers"                                   : "^1.4",
+        "vlucas/phpdotenv"                                      : "~2.2.0",
 
         "wordpress"                                             : "*",
-        "advanced-custom-fields/advanced-custom-fields-pro"     : "*",
-        "wpackagist-plugin/fg-fix-serialized-strings"           : "*",
-        "wpackagist-plugin/backwpup"                            : "*",
-        "wpackagist-plugin/limit-login-attempts"                : "*",
-
-        "wpackagist-plugin/all-in-one-wp-security-and-firewall" : "*",
-        "wpackagist-plugin/wordfence"                           : "*",
-        "wpackagist-plugin/sucuri-scanner"                      : "*",
-        "wpackagist-plugin/bulletproof-security"                : "*",
-
-        "wpackagist-plugin/demo-data-creator"                   : "*",
-        "wpackagist-plugin/bulk-content-creator"                : "*",
-
-        "wpackagist-plugin/analytics-for-cloudflare"            : "*",
-        "wpackagist-plugin/cloudflare-flexible-ssl"             : "*",
-        "wpackagist-plugin/sunny"                               : "*",
-
-        "wpackagist-plugin/wp-super-cache"                      : "*",
-        "wpackagist-plugin/autoptimize"                         : "*",
-        "wpackagist-plugin/bwp-minify"                          : "*",
-        "wpackagist-plugin/wordpress-seo"                       : "*",
-        "wpackagist-plugin/disqus-comment-system"               : "*",
-
-        "simple/simple-framework"                               : "*",
-        "simple/simple-child"                                   : "*",
-        "simple/simple-shortcodes"                              : "*",
-        "simple/simple-cpt-plugin"                              : "*",
         "simple/simple-multi-cpts"                              : "*",
+        "wpackagist-plugin/wp-mail-smtp"                        : "*",
+        "advanced-custom-fields/advanced-custom-fields-pro"     : "*",
+        
+        "wpackagist-plugin/wordfence"                           : "*",
+        
+        "wpackagist-plugin/wp-analytify"                        : "*",
+        "wpackagist-plugin/wordpress-seo"                       : "*",        
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo"  : "*",
 
-        "wpackagist-plugin/duplicate-post"                      : "*",
-        "wpackagist-plugin/wordpress-importer"                  : "*",
-        "wpackagist-plugin/intuitive-custom-post-order"         : "*",
-        "wpackagist-plugin/author-recommended-posts"            : "*",
-        "wpackagist-plugin/wp-ajaxify-comments"                 : "*",
-        "wpackagist-plugin/oembed-in-comments"                  : "*",
-        "wpackagist-plugin/goodbye-captcha"                     : "*",
-        "wpackagist-plugin/theme-my-login"                      : "*",
-        "wpackagist-plugin/manual-image-crop"                   : "*",
-
-        "wpackagist-plugin/minimal-coming-soon-maintenance-mode": "*",
-        "wpackagist-plugin/wp-maintenance-mode"                 : "*",
-        "wpackagist-plugin/restricted-site-access"              : "*",
+        "wpackagist-plugin/wp-fastest-cache"                    : "*",
+        "wpackagist-plugin/autoptimize"                         : "*",
+        
+        "wpackagist-plugin/backwpup"                            : "*",
         "wpackagist-plugin/password-protected"                  : "*",
-
-        "wpackagist-plugin/relevanssi"                          : "*",
-        "wpackagist-plugin/wp-crontrol"                         : "*"
+        "wpackagist-plugin/limit-login-attempts"                : "*",
+        "wpackagist-plugin/minimal-coming-soon-maintenance-mode": "*"
     },
 
     "require-dev" : {
+        "wpackagist-plugin/sqlite-integration"                  : "*",
         "wpackagist-plugin/log-deprecated-notices"              : "*",
-        "wpackagist-plugin/monster-widget"                      : "*",
-        "wpackagist-plugin/user-switching"                      : "*",
-        "wpackagist-plugin/username-changer"                    : "*",
-        "wpackagist-plugin/rewrite-rules-inspector"             : "*",
-        "wpackagist-plugin/safe-redirect-manager"               : "*",
         "wpackagist-plugin/regenerate-thumbnails"               : "*",
-        "wpackagist-plugin/wordpress-reset"                     : "*",
         "wpackagist-plugin/query-monitor"                       : "*",
         "wpackagist-plugin/debug-bar"                           : "*"
     },
 
-    "extra"       : {
-        "webroot-dir": "wp",
-        "webroot-package": "wordpress"
+    "extra": {
+        "installer-paths": {
+            "app/content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "app/content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "app/content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "app/wordpress"
     },
 
-    "config"      : {
-        "vendor-dir"                            :  "wp-content/vendor"
+    "config": {
+        "vendor-dir":  "vendor"
     },
 
     "repositories": [
         {
-            "type"                              : "composer",
-            "url"                               : "http://wpackagist.org"
+            "type": "composer",
+            "url": "https://wpackagist.org"
         },
         {
             "type": "package",
             "package": {
                 "type": "webroot",
                 "name": "wordpress",
-                "version": "4.4",
+                "version": "4.9.7",
                 "dist": {
-                    "url": "https://github.com/WordPress/WordPress/archive/4.4.zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.9.7.zip",
                     "type": "zip"
                 }
             }
@@ -110,32 +78,20 @@
           "type": "package",
           "package": {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.0",
+            "version": "5.7.1",
             "type": "wordpress-plugin",
             "dist": {
               "type": "zip",
-              "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k={$KEY}"
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+            },
+            "require": {
+                "philippbaschke/acf-pro-installer": "^1.0",
+                "composer/installers": "^1.0"
             }
           }
         },
         {
-            "type"                              : "vcs",
-            "url": "git://github.com/kiriaze/simple-framework.git"
-        },
-        {
-            "type"                              : "vcs",
-            "url": "git://github.com/kiriaze/simple-child.git"
-        },
-        {
-            "type"                              : "vcs",
-            "url": "git://github.com/kiriaze/simple-shortcodes.git"
-        },
-        {
-            "type"                              : "vcs",
-            "url": "git://github.com/kiriaze/simple-cpt-plugin.git"
-        },
-        {
-            "type"                              : "vcs",
+            "type": "vcs",
             "url": "git://github.com/kiriaze/simple-multi-cpts.git"
         }
     ]
