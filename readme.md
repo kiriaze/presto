@@ -1,4 +1,9 @@
-[PressPlay Readme](https://gist.github.com/kiriaze/9fc0d101651326dac67c)
+## Preface
+Look at `composer.json` before running `composer install` incase you'd rather not install the plugins I've recommended. This has only been tested on a mac environment.
+
+Take a look [here](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for more information regarding other optional configurations or setup, if you'd rather use the built in osx php/apache/hosts etc.
+
+By running the install script, sqlite is used and referenced for local development, however this isn't recommended for production environments, rather reference this [link](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for a more production ready environment. 
 
 ## Installation
 1. `composer install`
