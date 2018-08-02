@@ -23,9 +23,6 @@ app/content/mu-plugins/*
 # example: !app/plugins/plugintobepreserved
 
 # app/content/themes - everything but main theme and fallback
-app/content/themes/*
-!app/content/themes/twentyfifteen/
-!app/content/themes/twentysixteen/
 
 # cache
 app/content/advanced-cache.php
