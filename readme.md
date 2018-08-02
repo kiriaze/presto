@@ -10,6 +10,9 @@ By running the install script, sqlite is used and referenced for local developme
 2. Either copy or rename .env.example and update variables.
 3. `php -S localhost:8000 -t app/`
 
+###### In regards to deployment
+For use with ServerPilot, you must clone the repo to the root of the app rather than within `public`, then delete public dir and symlink it to app. `ln -s app public`
+
 ### Other recommended plugins not included within the barebones composer.json
 
 ```
