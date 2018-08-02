@@ -18,6 +18,7 @@ app/content/plugins/*
 !app/content/plugins/.gitkeep
 app/content/mu-plugins/*
 !app/content/mu-plugins/.gitkeep
+!app/content/mu-plugins/fallback-themes.php
 # remember to exlude custom plugins from being ignored 
 # example: !app/plugins/plugintobepreserved
 
