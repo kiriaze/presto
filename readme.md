@@ -2,8 +2,9 @@
 Presto is a local wordpress environment, run natively on osx. Runs off sqlite db for quick and easy development.
 
 ## Installation
-1. Either copy or rename .env.example and update variables.
-1. Run `sh setup.sh`
+1. Clone repo recursively to include the submodule theme wordpress-starter. `git clone --recursive git@github.com:kiriaze/presto.git`
+2. Either copy or rename .env.example and update variables.
+3. Run `sh setup.sh`
 
 ### Notes
 - Look at `composer.json` before running `sh setup.sh` incase you'd rather not install the plugins I've recommended. This has only been tested on a mac environment.
