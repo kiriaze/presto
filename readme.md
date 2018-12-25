@@ -1,14 +1,16 @@
 ## Preface
-Look at `composer.json` before running `composer install` incase you'd rather not install the plugins I've recommended. This has only been tested on a mac environment.
-
-Take a look [here](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for more information regarding other optional configurations or setup, if you'd rather use the built in osx php/apache/hosts etc.
-
-By running the install script, sqlite is used and referenced for local development, however this isn't recommended for production environments, rather reference this [link](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for a more production ready environment. 
+Presto is a local wordpress environment, run natively on osx. Runs off sqlite db for quick and easy development.
 
 ## Installation
-1. `composer install`
-2. Either copy or rename .env.example and update variables.
-3. `php -S localhost:8000 -t app/`
+1. Either copy or rename .env.example and update variables.
+1. Run `sh setup.sh`
+
+### Notes
+- Look at `composer.json` before running `sh setup.sh` incase you'd rather not install the plugins I've recommended. This has only been tested on a mac environment.
+
+- Take a look [here](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for more information regarding other optional configurations or setup, if you'd rather use the built in osx php/apache/hosts etc.
+
+- By running the install script, sqlite is used and referenced for local development, however this isn't recommended for production environments, rather reference this [link](https://gist.github.com/kiriaze/9fc0d101651326dac67c) for a more production ready environment. 
 
 ###### In regards to deployment
 For use with ServerPilot, you must clone the repo to the root of the app rather than within `public`, then delete public dir and symlink it to app. `ln -s app public`
