@@ -70,7 +70,7 @@
                 "name": "wordpress",
                 "version": "5.0.2",
                 "dist": {
-                    "url": "https://github.com/WordPress/WordPress/archive/4.9.7.zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/5.0.2.zip",
                     "type": "zip"
                 }
             }
