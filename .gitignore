@@ -24,7 +24,7 @@ app/content/mu-plugins/*
 
 # app/content/themes - everything but main theme and fallback
 app/content/themes/*
-!app/content/themes/THEMENAME
+!app/content/themes/wordpress-starter
 
 # cache
 app/content/advanced-cache.php

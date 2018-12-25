@@ -1,0 +1,4 @@
+[submodule "app/content/themes/wordpress-starter"]
+	path = app/content/themes/wordpress-starter
+	url = git@github.com:kiriaze/wordpress-starter.git
+	branch = master
